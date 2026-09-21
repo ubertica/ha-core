@@ -1,0 +1,13 @@
+{
+  "name": "ha-sec",
+  "version": "1.0.0",
+  "description": "PumaPay AppSec+SecOps (threat/appsec/secops). Distinct from AMS sentinel. Full HA autonomy, bus collab with pam/sre/release/ledger, selftest PASS. Same structure and quality as ha-hackers and ha-risk.",
+  "category": "product",
+  "keywords": [
+    "ha-sec",
+    "sec",
+    "sec-lead",
+    "threat",
+    "appsec"
+  ]
+}

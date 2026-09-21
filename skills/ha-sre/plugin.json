@@ -1,0 +1,11 @@
+{
+  "name": "ha-sre",
+  "version": "1.0.0",
+  "description": "PumaPay SRE: SLOs, deploy, on-call. Complements ha-sentinel. Full HA autonomy, bus collab with sec/pam/ledger, selftest PASS. Same structure and quality as ha-hackers and ha-risk.",
+  "category": "product",
+  "keywords": [
+    "ha-sre",
+    "sre",
+    "sre-lead"
+  ]
+}

@@ -1,0 +1,1 @@
+/Users/c/dev/pumapay/equipos/workflows/ha-sec-tick.rhai

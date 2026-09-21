@@ -1,0 +1,16 @@
+{
+  "name": "ha-sentinel",
+  "version": "1.0.0",
+  "description": "Perpetual AMS sentinel team: Ollama-local watcher, perimeter/audit/improve/release, escalate to Grok HA, collab with ha-pumapay over the bus.",
+  "category": "ops",
+  "keywords": [
+    "ha-sentinel",
+    "sentinel",
+    "ollama",
+    "ams",
+    "sent-watch",
+    "sent-audit",
+    "sent-ollama",
+    "ha-live"
+  ]
+}

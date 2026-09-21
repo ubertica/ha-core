@@ -1,0 +1,14 @@
+{
+  "name": "ha-dani-audit",
+  "version": "1.1.0",
+  "description": "Periodic read-only code/MR/release audit for Daniel (PumaPay + aggregator + gaming). Coexistence model. No loot. No live writes.",
+  "category": "civil",
+  "keywords": [
+    "ha-dani-audit",
+    "daud",
+    "daud-lead",
+    "daniel",
+    "civil",
+    "puma"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "kimi-cu": {
+      "command": "/Applications/KimiCU.app/Contents/MacOS/kimi-cu",
+      "args": [
+        "mcp",
+        "-s",
+        "user"
+      ],
+      "type": "stdio"
+    },
+    "kimi-control": {
+      "command": "/Users/c/.nvm/versions/node/v24.13.0/bin/node",
+      "args": [
+        "/Users/c/dev/mcp-kimi-control/index.js"
+      ]
+    },
+    "macos-mcp": {
+      "command": "/Users/c/bin/macos-local-mcp"
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

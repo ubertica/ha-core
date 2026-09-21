@@ -1,0 +1,9 @@
+[
+  {"id": "rules", "role": "Fraud/AML rule catalog, velocity, device signals.", "artifact": "risk/RULES.md", "ready": "rules"},
+  {"id": "cases", "role": "Case queue schema, severities, SLA.", "artifact": "risk/CASES.md", "ready": "cases"},
+  {"id": "score", "role": "Scoring model notes and feature list.", "artifact": "risk/SCORING.md", "ready": "score"},
+  {"id": "qa", "role": "Risk QA: false positive/negative gates.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "dev", "role": "Implement risk engine changes.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Escalate to support/kyc/compliance bus.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for risk.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

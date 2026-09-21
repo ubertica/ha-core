@@ -1,0 +1,11 @@
+{
+  "name": "ha-re",
+  "version": "0.1.0-prepared",
+  "description": "Reverse engineering: Ghidra MCP + module07.",
+  "category": "labs",
+  "keywords": [
+    "ghidra",
+    "reverse",
+    "module07"
+  ]
+}

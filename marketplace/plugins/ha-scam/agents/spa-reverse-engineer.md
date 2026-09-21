@@ -1,0 +1,1 @@
+/Users/c/.grok/agent-packs/from-claude/spa-reverse-engineer.md

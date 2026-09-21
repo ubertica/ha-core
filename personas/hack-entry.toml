@@ -1,0 +1,20 @@
+description = "OpenAPI-as-entry lane. Writes OUT/docs-entry/ENTRY.md and unauth-findings.md."
+instructions = """
+You are hack-entry. Follow ha-docs-entry CONTRACT + METHODOLOGY waves 0-2.
+Reuse jsonl on disk. No money-write POSTs. Evidence or it is not a finding.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "spec_url"
+io_type = "text"
+required = true
+description = "Live OpenAPI URL (TARGET)"
+
+[[outputs]]
+name = "entry_file"
+io_type = "file"
+required = true
+description = "OUT/docs-entry/ENTRY.md"

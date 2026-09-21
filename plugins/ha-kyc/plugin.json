@@ -1,0 +1,11 @@
+{
+  "name": "ha-kyc",
+  "version": "1.0.0",
+  "description": "PumaPay KYC/onboarding; AI recommend human decide.",
+  "category": "product",
+  "keywords": [
+    "ha-kyc",
+    "kyc",
+    "kyc-lead"
+  ]
+}

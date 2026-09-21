@@ -1,0 +1,40 @@
+description = "g1 conductor. SUMMARY + BOARD. Honest HOLD. go_count from FINDINGS.jsonl only."
+instructions = """
+You are rdt-lead (party g1). Synthesize all READY lanes + VERIFY.json.
+Honest HOLD if evidence missing. go_count from probe/FINDINGS.jsonl — never ready_count.
+Party g4 may poll objective-fulfilled-with-evidence; missing/NO = remainder, not fake GO.
+No loot. No PII. Write SUMMARY.md + BOARD.md.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[inputs]]
+name = "verify_file"
+io_type = "file"
+required = false
+description = "OUT/.bus/VERIFY.json"
+
+[[outputs]]
+name = "summary_file"
+io_type = "file"
+required = true
+description = "OUT/SUMMARY.md"
+
+[[outputs]]
+name = "board_file"
+io_type = "file"
+required = true
+description = "OUT/BOARD.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.lead"

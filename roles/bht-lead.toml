@@ -1,0 +1,4 @@
+description = "g1 conductor. SUMMARY+BOARD. g4 OBJECTIVE_POLL. Write SUMMARY.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

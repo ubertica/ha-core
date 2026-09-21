@@ -1,0 +1,16 @@
+{
+  "name": "ha-rtk-kb",
+  "version": "1.0.0",
+  "description": "Shared knowledge base for ha-redteam (civil) and ha-blackhat (offense). CVE/KEV/OSV cache, redacted findings index, MEMORY/LEARN jsonl. Lanes stay separate.",
+  "category": "intel",
+  "keywords": [
+    "ha-rtk-kb",
+    "redteam",
+    "blackhat",
+    "cve",
+    "kev",
+    "memory",
+    "intel"
+  ],
+  "axis": "toolkit"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ha-offense",
+  "version": "0.1.0-prepared",
+  "description": "Infection / pack / delivery. Grant infection-delivery-nuclear.",
+  "category": "offense",
+  "keywords": [
+    "infection",
+    "pack",
+    "kill-chain"
+  ]
+}

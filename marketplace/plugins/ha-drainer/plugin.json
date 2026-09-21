@@ -1,0 +1,11 @@
+{
+  "name": "ha-drainer",
+  "version": "0.1.0-prepared",
+  "description": "Crypto drainer / DaaS. Not general DeFi research (that is ha-crypto).",
+  "category": "crypto",
+  "keywords": [
+    "drainer",
+    "daas",
+    "permit2"
+  ]
+}

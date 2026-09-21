@@ -1,0 +1,26 @@
+{
+  "id": "branch-weaver",
+  "title": "BranchWeaver — AGI-style adaptive attack tree with dynamic fork/prune/weave",
+  "type": "long-pivot-set",
+  "version": "1",
+  "loop_until": "tree_stable_or_xxx_satisfied_or_max_depth",
+  "max_iterations": 150,
+  "chaining": {
+    "random_weights": { "self": 0.3, "pivot-mesh": 0.2, "lateral-swarm": 0.25, "desire-chainer": 0.25 },
+    "smart_rules": [
+      "if >50% branches pruned in round then strongly favor pivot-mesh for new principals",
+      "if >=3 high-confidence horizontal branches then favor lateral-swarm to parallelize",
+      "if any branch reaches 'near_xxx' then force desire-chainer"
+    ]
+  },
+  "core_loop": {
+    "phases_per_iteration": ["read_tree_and_graph", "score_branches", "prune_and_spawn", "rank_probes", "g1_execute_priority", "update_xxx_impact", "broadcast"],
+    "tree_primitives": ["fork", "weave_horizontal", "prune", "revive", "merge_pattern"]
+  },
+  "artifacts": {
+    "primary": "attack-tree.json",
+    "secondary": ["active-branches.md", "pruned-log.md"],
+    "comms": ".bus/pivot/comms.jsonl"
+  },
+  "pumapay_notes": "Start with JWT/BOLA surface. Weave horizontal across users/merchants. Fork on callback and role surfaces. Prune pure vertical JWT forges quickly if failing."
+}

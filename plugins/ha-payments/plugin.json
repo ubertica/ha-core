@@ -1,0 +1,12 @@
+{
+  "name": "ha-payments",
+  "version": "1.1.0",
+  "description": "PumaPay payments: CORE-SURFACE rails, sandbox PSP, signed webhooks.",
+  "category": "product",
+  "keywords": [
+    "ha-payments",
+    "pay",
+    "pay-lead",
+    "fintech-build"
+  ]
+}

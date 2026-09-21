@@ -1,0 +1,14 @@
+{
+  "name": "ha-team-forge",
+  "version": "1.0.0",
+  "description": "Factory for HA teams: scaffold plugins, agent rosters, skills, contracts, workflows, ctl/dispatch/verify — same shape as ha-hackers.",
+  "category": "meta",
+  "keywords": [
+    "ha-team-forge",
+    "create team",
+    "create plugin",
+    "create agents",
+    "scaffold",
+    "ha-hackers pattern"
+  ]
+}

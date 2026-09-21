@@ -1,0 +1,25 @@
+{
+  "id": "pivot-mesh",
+  "title": "PivotMesh — long-horizon living graph expansion and horizontal traversal",
+  "type": "long-pivot-set",
+  "version": "1",
+  "loop_until": "operator_stop_or_xxx_achieved",
+  "max_iterations": 200,
+  "chaining": {
+    "random_weights": { "self": 0.35, "branch-weaver": 0.25, "lateral-swarm": 0.25, "desire-chainer": 0.15, "ha-hackers": 0.0, "ha-party-x": 0.0 },
+    "smart_rules": [
+      "if new_horizontal_edges > 8 in last round then favor lateral-swarm",
+      "if vertical_pivot_success_rate < 0.2 then favor branch-weaver or ha-party-x surface"
+    ]
+  },
+  "core_loop": {
+    "phases_per_iteration": ["graph_read", "hypothesize_expansion", "g1_probe", "merge_evidence", "comms_broadcast", "maybe_chain"],
+    "graph_operations": ["add_nodes", "add_edges", "update_confidence", "prune_dormant", "horizontal_walk"]
+  },
+  "artifacts": {
+    "primary": "pivot-graph.json",
+    "secondary": ["horizontal-candidates.md", "pivot-walks.md"],
+    "comms": ".bus/pivot/comms.jsonl"
+  },
+  "pumapay_notes": "Seed from PumaPay customer JWT + BOLA surfaces. Expand to merchant clusters, staff roles, PSP callbacks, ledger edges."
+}

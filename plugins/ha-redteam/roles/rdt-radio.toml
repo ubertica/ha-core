@@ -1,0 +1,4 @@
+description = "all. comms.jsonl + party_ask + ha hardallow. Write radio/RADIO.md."
+default_capability_mode = "all"
+reasoning_effort = "medium"
+default_isolation = "none"

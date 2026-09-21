@@ -1,0 +1,11 @@
+{
+  "name": "ha-release",
+  "version": "1.0.0",
+  "description": "PumaPay release train go/no-go. Full HA autonomy, bus collab with sec/sre/pam, selftest PASS. Same structure and quality as ha-hackers and ha-risk.",
+  "category": "product",
+  "keywords": [
+    "ha-release",
+    "rel",
+    "rel-lead"
+  ]
+}

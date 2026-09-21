@@ -1,0 +1,4 @@
+description = "g1. ha-pivot graph/XXX/chain-proposals. Write pivot/PIVOT.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

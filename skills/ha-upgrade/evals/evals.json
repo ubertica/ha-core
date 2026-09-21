@@ -1,0 +1,23 @@
+{
+  "skill_name": "ha-upgrade",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Acabamos de terminar un /learn (step, 14d). Packeá un plugin de upgrade con eso. No lo instales.",
+      "expected_output": "Creates ~/.grok/ha-marketplace/plugins/ha-upgrade-vN/ with plugin.json, PLUGIN.md, redacted actions.json, CHANGELOG. Prints installed:false. Does not grok plugin install. Does not apply.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Ya existe ha-upgrade-v1. Hacé la siguiente versión con estas notas: 'party seats inherit HA via system prompt; /model is TUI slash for g1 only'. No pises v1.",
+      "expected_output": "Creates ha-upgrade-v2 as a new folder. v1 directory unchanged. registry.current=2. Notes appear in CHANGELOG.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Aplicá el upgrade v1.",
+      "expected_output": "Without operator --go / explicit GO, HOLD. With GO, apply only reversible create/edit; skip requires_confirmation; write originals to learn/trash/ha-upgrade-v1/originals.",
+      "files": []
+    }
+  ]
+}

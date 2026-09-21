@@ -1,0 +1,9 @@
+[
+  {"id": "slo", "role": "SLOs/SLIs, error budgets, dashboards.", "artifact": "sre/SLO.md", "ready": "slo"},
+  {"id": "deploy", "role": "Deploy pipelines, feature flags, rollback.", "artifact": "sre/DEPLOY.md", "ready": "deploy"},
+  {"id": "oncall", "role": "On-call runbooks, paging, escalation.", "artifact": "sre/ONCALL.md", "ready": "oncall"},
+  {"id": "change", "role": "Change management checklist; link release team.", "artifact": "sre/CHANGE.md", "ready": "change"},
+  {"id": "dev", "role": "Infra-as-code / tooling changes.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Collab sentinel/release/pumapay.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for sre.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

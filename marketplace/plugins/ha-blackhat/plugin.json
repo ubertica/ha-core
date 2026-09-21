@@ -1,0 +1,27 @@
+{
+  "name": "ha-blackhat",
+  "version": "0.1.0-wip",
+  "description": "Party (g1–g4) BLACKHAT twin of ha-redteam. docs-entry foothold, probe, exploit iff GO, loot in engagement OUT, killchain, ha-offense. Same ha-rtk-kb. Not Daniel civil.",
+  "category": "offense",
+  "keywords": [
+    "ha-blackhat",
+    "blackhat",
+    "party",
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "docs-entry",
+    "killchain",
+    "loot",
+    "ha-offense"
+  ],
+  "axis": "team",
+  "depends_on_skills": [
+    "ha-rtk-kb",
+    "ha-party",
+    "ha-docs-entry",
+    "ha-offense",
+    "ha-core"
+  ]
+}

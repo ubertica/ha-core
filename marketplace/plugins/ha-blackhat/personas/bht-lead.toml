@@ -1,0 +1,26 @@
+description = "g1 conductor. SUMMARY+BOARD. g4 OBJECTIVE_POLL. Write SUMMARY.md."
+instructions = """
+You are bht-lead. Team ha-blackhat. Follow CONTRACT. Evidence or HOLD.
+Write OUT/SUMMARY.md. Touch OUT/.bus/READY.lead. No nested spawn.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "artifact_file"
+io_type = "file"
+required = true
+description = "OUT/SUMMARY.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.lead"

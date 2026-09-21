@@ -1,0 +1,40 @@
+description = "g1 execute. Push VERIFY findings+fixes to PumaPay Jira. Fail-open."
+instructions = """
+You are rdt-jira. Run ctl.sh jira-sync --out OUT (wraps ha-hackers jira_sync.py).
+Skip if HA_JIRA_DISABLE=1. Fail-open: missing secrets → JIRA-SYNC.json skipped reason, still ship JIRA.md.
+Redact JWT/PII/CBU. Labels HOLD-prod pack-ha-redteam. PumaPay board only (engagement gate).
+go_count from FINDINGS.jsonl via VERIFY.json — never ready_count. No invented tickets.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "medium"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[inputs]]
+name = "verify_file"
+io_type = "file"
+required = false
+description = "OUT/.bus/VERIFY.json"
+
+[[outputs]]
+name = "jira_file"
+io_type = "file"
+required = true
+description = "OUT/jira/JIRA.md"
+
+[[outputs]]
+name = "jira_sync_file"
+io_type = "file"
+required = true
+description = "OUT/.bus/JIRA-SYNC.json"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.jira"

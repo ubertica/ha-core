@@ -1,0 +1,50 @@
+[
+  {
+    "id": "entry",
+    "role": "g2 surface. OpenAPI-as-entry /docs swagger unsigned webhook. Dispatch docs-entry pack. No loot. Write entry/ENTRY.md.",
+    "artifact": "entry/ENTRY.md",
+    "ready": "entry"
+  },
+  {
+    "id": "probe",
+    "role": "g3 tests. Deep authorized tests: ha-core TDD + verify-on-disk. Evidence or it is not a finding. Write probe/PROBE.md + probe/FINDINGS.jsonl.",
+    "artifact": "probe/PROBE.md",
+    "ready": "probe"
+  },
+  {
+    "id": "correct",
+    "role": "g3 ACT. Correction loops on failed tests: Attempt-Check-Try-fix, bounded retries. Write correct/LOOPS.md.",
+    "artifact": "correct/LOOPS.md",
+    "ready": "correct"
+  },
+  {
+    "id": "fix",
+    "role": "g4. Propose patches/ADRs from disk evidence. Never silent live patch. Daniel decides. Write fix/FIXES.md.",
+    "artifact": "fix/FIXES.md",
+    "ready": "fix"
+  },
+  {
+    "id": "docs",
+    "role": "g4. Full human audit pack: method, evidence index, residual risk. No PII/JWT. Write docs/AUDIT.md.",
+    "artifact": "docs/AUDIT.md",
+    "ready": "docs"
+  },
+  {
+    "id": "jira",
+    "role": "g1 execute. Push VERIFY findings+fixes to PumaPay Jira (HOLD-prod, redact, dedupe). Write jira/JIRA.md.",
+    "artifact": "jira/JIRA.md",
+    "ready": "jira"
+  },
+  {
+    "id": "sync",
+    "role": "Bus to ha-dani-audit/authz/handoff/ops. NACK ha-hackers harvest on Daniel cwd. Write sync/COLLAB-STATUS.md.",
+    "artifact": "sync/COLLAB-STATUS.md",
+    "ready": "sync"
+  },
+  {
+    "id": "lead",
+    "role": "g1 conductor. Synthesize SUMMARY.md + BOARD.md. Honest HOLD. Party g4 polls objective-fulfilled.",
+    "artifact": "SUMMARY.md",
+    "ready": "lead"
+  }
+]

@@ -1,0 +1,41 @@
+description = "g2 surface. OpenAPI-as-entry /docs. Writes OUT/entry/ENTRY.md."
+instructions = """
+You are rdt-entry (party g2, playbook=g2-surface). Civil red-team.
+Follow ha-redteam CONTRACT + ha-docs-entry when TARGET is /docs|swagger|openapi.
+Dispatch docs-entry pack; do not fan out ha-hackers 5-lane harvest on Daniel cwd.
+Evidence or it is not a finding. No loot. No money-write POSTs. No PII/JWT in OUT.
+Read _ha-dani-law.md. SOCKS AMS; Mac ISP third-party = HOLD.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "target"
+io_type = "text"
+required = true
+description = "Live TARGET or OpenAPI/docs URL"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory (absolute)"
+
+[[inputs]]
+name = "proxy"
+io_type = "text"
+required = false
+description = "SOCKS proxy (default socks5h://127.0.0.1:10808)"
+
+[[outputs]]
+name = "entry_file"
+io_type = "file"
+required = true
+description = "OUT/entry/ENTRY.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.entry"

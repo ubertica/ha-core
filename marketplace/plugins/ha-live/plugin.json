@@ -1,0 +1,7 @@
+{
+  "name": "ha-live",
+  "version": "1.2.0",
+  "description": "HA runtime work surface: Mac /Users/c/dev/ha-live + AMS /opt/ha-live. Continuous Grok 4.6, bus, third-party pivot. Not a pentest pack.",
+  "category": "agentic",
+  "keywords": ["ha-live", "organismo", "AMS remainder", "/ha-live", "ha-operate"]
+}

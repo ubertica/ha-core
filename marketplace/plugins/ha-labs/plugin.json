@@ -1,0 +1,11 @@
+{
+  "name": "ha-labs",
+  "version": "0.1.0-prepared",
+  "description": "Lab VMs: android-emulator + UTM Windows. Linux qemu via module07 when live.",
+  "category": "labs",
+  "keywords": [
+    "android",
+    "windows",
+    "qemu"
+  ]
+}

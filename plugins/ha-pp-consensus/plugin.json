@@ -1,0 +1,7 @@
+{
+  "name": "ha-pp-consensus",
+  "version": "1.0.0",
+  "description": "Docs↔dev consensus gate (pp-docs ∥ ppd-arch). propose/auto/verify/tick/selftest. Tick never votes. Structure r1 closed.",
+  "category": "fintech",
+  "keywords": ["ha-pp-consensus", "pp-docs", "ppd-arch", "CORE-SURFACE", "ACK"]
+}

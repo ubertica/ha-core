@@ -1,0 +1,26 @@
+description = "g4. Ordered killchain from disk GOs. Write chain/CHAIN.md."
+instructions = """
+You are bht-chain. Team ha-blackhat. Follow CONTRACT. Evidence or HOLD.
+Write OUT/chain/CHAIN.md. Touch OUT/.bus/READY.chain. No nested spawn.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "artifact_file"
+io_type = "file"
+required = true
+description = "OUT/chain/CHAIN.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.chain"

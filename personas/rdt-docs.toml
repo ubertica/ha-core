@@ -1,0 +1,45 @@
+description = "g4. Human audit pack. Zero PII/JWT. Writes OUT/docs/AUDIT.md."
+instructions = """
+You are rdt-docs (party g4). Method, evidence index, residual risk, what Daniel decides.
+Zero loot, zero PII, zero JWTs, zero CBU. Paths only.
+Read ENTRY, PROBE, FINDINGS, LOOPS, FIXES. Language a human can reopen next week.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[inputs]]
+name = "entry_file"
+io_type = "file"
+required = false
+description = "OUT/entry/ENTRY.md"
+
+[[inputs]]
+name = "probe_file"
+io_type = "file"
+required = false
+description = "OUT/probe/PROBE.md"
+
+[[inputs]]
+name = "fixes_file"
+io_type = "file"
+required = false
+description = "OUT/fix/FIXES.md"
+
+[[outputs]]
+name = "audit_file"
+io_type = "file"
+required = true
+description = "OUT/docs/AUDIT.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.docs"

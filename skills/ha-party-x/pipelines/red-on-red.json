@@ -1,0 +1,87 @@
+{
+  "id": "red-on-red",
+  "title": "No live spray until g4 signs survivors. Debate-heavy. Use on an existing OUT.",
+  "groups": ["preflight", "read", "kill", "pivot", "exec-min"],
+  "fallback": { "g3": "g4" },
+  "verify_after": ["w05-vote"],
+  "weapon_requires_go": true,
+  "waves": [
+    {
+      "id": "w00-preflight",
+      "group": "preflight",
+      "title": "Need existing OUT artifacts. Else HOLD.",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/PLAN.json",
+      "ready": "w00-preflight"
+    },
+    {
+      "id": "w01-read-disk",
+      "group": "read",
+      "title": "g2+g3+g4 read FINDINGS/api-map/authz/0day independently",
+      "seats": ["g2", "g3", "g4"],
+      "mode": "parallel",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "ror/read.md",
+      "ready": "w01-read-disk"
+    },
+    {
+      "id": "w02-kill-round",
+      "group": "kill",
+      "title": "Sequential round: g2 defends surface, g3 defends weapon, g4 kills",
+      "seats": ["g2", "g3", "g4"],
+      "mode": "round",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "ror/kill.md",
+      "ready": "w02-kill-round"
+    },
+    {
+      "id": "w03-missed",
+      "group": "pivot",
+      "title": "What nobody hunted. g4 leads, others add.",
+      "seats": ["g4", "g3", "g2"],
+      "mode": "round",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "ror/missed.md",
+      "ready": "w03-missed"
+    },
+    {
+      "id": "w04-pivot-ws",
+      "group": "pivot",
+      "title": "Open workstreams for missed primitives; close dead ones",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/WORKSTREAMS.jsonl",
+      "ready": "w04-pivot-ws"
+    },
+    {
+      "id": "w05-vote",
+      "group": "kill",
+      "title": "GO vote. Default NO.",
+      "seats": ["g4"],
+      "mode": "parallel",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "ror/vote.md",
+      "ready": "w05-vote"
+    },
+    {
+      "id": "w06-min-exec",
+      "group": "exec-min",
+      "title": "g1 runs ONLY refute probes + surviving GO dummy confirms",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "FINDINGS.md",
+      "ready": "w06-min-exec"
+    }
+  ]
+}

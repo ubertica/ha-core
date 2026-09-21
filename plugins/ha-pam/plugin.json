@@ -1,0 +1,11 @@
+{
+  "name": "ha-pam",
+  "version": "1.0.0",
+  "description": "PAM (Privileged Access Management) team for PumaPay staff-os and platform: access reviews, JIT grants, credential rotation, breakglass, over-privilege detection and audit evidence. Same gold quality as ha-hackers and ha-sec: full agents (pam-audit etc), contracts, autonomy, bus integration with sec/sre/backoffice, selftest.",
+  "category": "meta",
+  "keywords": [
+    "ha-pam",
+    "pam",
+    "pam-lead"
+  ]
+}

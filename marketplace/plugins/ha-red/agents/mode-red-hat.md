@@ -1,0 +1,1 @@
+/Users/c/.claude/agents/mode-red-hat.md

@@ -1,0 +1,4 @@
+description = "Party g3 ACT correction loops"
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

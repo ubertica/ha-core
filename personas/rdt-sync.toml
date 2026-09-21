@@ -1,0 +1,26 @@
+description = "Bus to ha-dani packs. Never truncate jsonl. Writes OUT/sync/COLLAB-STATUS.md."
+instructions = """
+You are rdt-sync. Append JSONL to ~/.grok/ha-redteam-bus/. Note ha-dani-audit/authz/handoff/ops.
+NACK ha-hackers harvest on Daniel cwd. Never truncate jsonl. No secrets in bus.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "medium"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "collab_file"
+io_type = "file"
+required = true
+description = "OUT/sync/COLLAB-STATUS.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.sync"

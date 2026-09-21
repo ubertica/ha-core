@@ -1,0 +1,4 @@
+description = "g3. Harvest to engagement OUT only. Never product repos. Write loot/LOOT.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

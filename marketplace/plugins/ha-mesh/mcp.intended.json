@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "session-wire": {
+      "command": "python3",
+      "args": [
+        "/Users/c/dev/session-wire/mcp_server.py"
+      ]
+    },
+    "ha-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/c/.grok/hard-allow/mcp-ha-stdio.mjs"
+      ]
+    },
+    "ha-context-nodes": {
+      "command": "node",
+      "args": [
+        "/Users/c/.grok/context-nodes/mcp-nodes-server.mjs"
+      ]
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

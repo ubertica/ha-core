@@ -1,0 +1,12 @@
+{
+  "name": "ha-scam",
+  "version": "0.1.0-prepared",
+  "description": "Lures / scam-factory / SPA reverse-proxy. Not ha-fraud, not ha-drainer.",
+  "category": "fraud",
+  "keywords": [
+    "scam",
+    "lure",
+    "spa-proxy",
+    "scam-factory"
+  ]
+}

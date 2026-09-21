@@ -1,0 +1,4 @@
+description = "Webhook/callback/HMAC inbound lane"
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

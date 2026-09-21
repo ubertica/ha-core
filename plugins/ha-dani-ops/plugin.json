@@ -1,0 +1,14 @@
+{
+  "name": "ha-dani-ops",
+  "version": "1.1.0",
+  "description": "Daniel infra ops: AMS danielcliente, dash, perimeter hosts. Read-only health. HOLD live patch and money-write.",
+  "category": "civil",
+  "keywords": [
+    "ha-dani-ops",
+    "dops",
+    "dops-lead",
+    "daniel",
+    "civil",
+    "puma"
+  ]
+}

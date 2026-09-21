@@ -1,0 +1,11 @@
+{
+  "name": "ha-risk",
+  "version": "1.0.0",
+  "description": "PumaPay risk/fraud/AML rules, cases, scoring.",
+  "category": "product",
+  "keywords": [
+    "ha-risk",
+    "rsk",
+    "rsk-lead"
+  ]
+}

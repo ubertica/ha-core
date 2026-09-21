@@ -1,0 +1,9 @@
+{
+  "name": "ha-phish",
+  "version": "0.1.0-prepared",
+  "description": "FOLD into ha-scam unless operator wants a split. Phish/lure delivery recipes.",
+  "category": "fraud",
+  "keywords": [
+    "phish"
+  ]
+}

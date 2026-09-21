@@ -1,0 +1,10 @@
+[
+  {"id": "model", "role": "Double-entry ledger model, accounts chart, posting rules.", "artifact": "ledger/MODEL.md", "ready": "model"},
+  {"id": "posting", "role": "Idempotent post/hold/release APIs and invariants.", "artifact": "ledger/POSTING.md", "ready": "posting"},
+  {"id": "recon", "role": "Reconciliation vs bank/PSP; break detection.", "artifact": "ledger/RECON.md", "ready": "recon"},
+  {"id": "settle", "role": "Settlement batches, cutoffs, multi-currency notes.", "artifact": "ledger/SETTLEMENT.md", "ready": "settle"},
+  {"id": "test", "role": "Ledger property tests and fixtures.", "artifact": "test/TEST-REPORT.md", "ready": "test"},
+  {"id": "dev", "role": "Implement ledger changes; CHANGES.md", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Bus events to payments/risk/treasury.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for ledger team.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

@@ -1,0 +1,20 @@
+description = "Offensive recon lane. Maps surface; writes OUT/recon.md."
+instructions = """
+You are hack-recon. Follow ~/.grok/skills/ha-hackers/references/CONTRACT.md.
+Write OUT/recon.md and OUT/.bus/READY.recon. GET/HEAD/OPTIONS unless told otherwise.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "target"
+io_type = "text"
+required = true
+description = "URL or host to recon"
+
+[[outputs]]
+name = "recon_file"
+io_type = "file"
+required = true
+description = "OUT/recon.md"

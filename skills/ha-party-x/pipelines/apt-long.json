@@ -1,0 +1,222 @@
+{
+  "id": "apt-long",
+  "title": "APT-long campaign (default). Longer and deeper than ha-hackers 5-lane.",
+  "groups": ["preflight", "surface", "zeroday", "adversary", "weapon"],
+  "fallback": { "g3": "g4" },
+  "verify_after": ["w12-red-on-red"],
+  "weapon_requires_go": true,
+  "waves": [
+    {
+      "id": "w00-preflight",
+      "group": "preflight",
+      "title": "HA + SOCKS + seats + mkdir bus",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/PLAN.json",
+      "ready": "w00-preflight",
+      "must": ["HA active", "proxy up", "OUT/.bus exists", "party_who"]
+    },
+    {
+      "id": "w01-osint-passive",
+      "group": "surface",
+      "title": "Passive OSINT design (no touch yet)",
+      "seats": ["g2", "g4"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": false,
+      "artifact": "osint-plan.md",
+      "ready": "w01-osint-passive"
+    },
+    {
+      "id": "w02-osint-exec",
+      "group": "surface",
+      "title": "g1 runs OSINT probe list (CT, DNS, intelx if live)",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "osint.md",
+      "ready": "w02-osint-exec"
+    },
+    {
+      "id": "w03-surface-design",
+      "group": "surface",
+      "title": "Full surface + SPA boot + JS harvest plan",
+      "seats": ["g2"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": false,
+      "artifact": "surface-plan.md",
+      "ready": "w03-surface-design"
+    },
+    {
+      "id": "w04-surface-exec",
+      "group": "surface",
+      "title": "g1 maps hosts/ports/paths/JS via PROXY",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "recon.md",
+      "ready": "w04-surface-exec"
+    },
+    {
+      "id": "w05-api-graphql",
+      "group": "surface",
+      "title": "API + GraphQL + webhook inventory (g2 design, g3 classes)",
+      "seats": ["g2", "g3"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": false,
+      "artifact": "api-plan.md",
+      "ready": "w05-api-graphql"
+    },
+    {
+      "id": "w06-api-exec",
+      "group": "surface",
+      "title": "g1 builds api-map from live methods",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "api-map.md",
+      "ready": "w06-api-exec"
+    },
+    {
+      "id": "w07-authz-matrix",
+      "group": "surface",
+      "title": "IDOR/BOLA/mass-assign/JWT matrix — round so they hear each other",
+      "seats": ["g2", "g3"],
+      "mode": "round",
+      "playbook": "g2-surface",
+      "exec": false,
+      "artifact": "authz-plan.md",
+      "ready": "w07-authz-matrix"
+    },
+    {
+      "id": "w08-authz-exec",
+      "group": "surface",
+      "title": "g1 dummy-id authz probes",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "authz-findings.md",
+      "ready": "w08-authz-exec"
+    },
+    {
+      "id": "w09-0day-hypotheses",
+      "group": "zeroday",
+      "title": "SSRF/SSTI/parser/proto/deser/upload catalog",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": false,
+      "artifact": "0day-plan.md",
+      "ready": "w09-0day-hypotheses"
+    },
+    {
+      "id": "w10-0day-refute",
+      "group": "zeroday",
+      "title": "g4 kills weak 0day hyps before live spray",
+      "seats": ["g4"],
+      "mode": "parallel",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "0day-refute.md",
+      "ready": "w10-0day-refute"
+    },
+    {
+      "id": "w11-0day-exec",
+      "group": "zeroday",
+      "title": "g1 probes surviving 0day hyps only",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "0day-findings.md",
+      "ready": "w11-0day-exec"
+    },
+    {
+      "id": "w12-webhook-callback",
+      "group": "zeroday",
+      "title": "Unsigned/HMAC/Telegram/IPN/callback matrix",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "webhook-findings.md",
+      "ready": "w12-webhook-callback"
+    },
+    {
+      "id": "w13-red-on-red",
+      "group": "adversary",
+      "title": "All brains round: kill claims, force pivots, vote GO",
+      "seats": ["g2", "g3", "g4"],
+      "mode": "round",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "red-on-red.md",
+      "ready": "w13-red-on-red"
+    },
+    {
+      "id": "w14-verify",
+      "group": "adversary",
+      "title": "Fail-closed disk GO (verify_evidence.py)",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/VERIFY.json",
+      "ready": "w14-verify"
+    },
+    {
+      "id": "w15-weaponize",
+      "group": "weapon",
+      "title": "PoC sketches for disk GOs only",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "exploit.md",
+      "ready": "w15-weaponize",
+      "requires_go": true
+    },
+    {
+      "id": "w16-chain",
+      "group": "weapon",
+      "title": "Compose kill chain then g4 attacks the chain",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": false,
+      "artifact": "chain.md",
+      "ready": "w16-chain",
+      "requires_go": true
+    },
+    {
+      "id": "w17-persist-lateral",
+      "group": "weapon",
+      "title": "Persist + lateral hypotheses; workstreams for multi-day",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": false,
+      "artifact": "persist-lateral.md",
+      "ready": "w17-persist-lateral"
+    },
+    {
+      "id": "w18-lead",
+      "group": "weapon",
+      "title": "FINDINGS.md + remainder workstreams. Always runs.",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "FINDINGS.md",
+      "ready": "w18-lead"
+    }
+  ]
+}

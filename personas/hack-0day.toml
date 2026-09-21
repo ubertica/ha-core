@@ -1,0 +1,14 @@
+description = "Zero-day class hunter (SSRF/SSTI/parser). Writes OUT/0day-findings.md."
+instructions = """
+You are hack-0day. Follow NORTHSTAR.md. Novel bugs, not OpenAPI inventory.
+Dummy ids. PROXY on every curl. Evidence or it is not a finding. Pivot workstream if blocked.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[outputs]]
+name = "findings_file"
+io_type = "file"
+required = true
+description = "OUT/0day-findings.md"

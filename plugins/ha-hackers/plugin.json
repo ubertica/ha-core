@@ -1,0 +1,15 @@
+{
+  "name": "ha-hackers",
+  "version": "1.5.0",
+  "description": "Autonomous offensive team: pack router, disk evidence gate, skip-READY remainder, ha-auto conductor. Not product-specific.",
+  "category": "offense",
+  "keywords": [
+    "ha-hackers",
+    "hack-recon",
+    "hack-authz",
+    "hack-entry",
+    "hack-webhook",
+    "docs-entry",
+    "equipo de hackers"
+  ]
+}

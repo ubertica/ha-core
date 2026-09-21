@@ -1,0 +1,9 @@
+[
+  {"id": "flows", "role": "Onboarding/re-KYC flows and vendor matrix.", "artifact": "kyc/FLOWS.md", "ready": "flows"},
+  {"id": "review", "role": "Manual review queue; AI recommend / human decide.", "artifact": "kyc/REVIEW.md", "ready": "review"},
+  {"id": "docs", "role": "Document types, retention, redaction rules.", "artifact": "kyc/DOCS.md", "ready": "docs"},
+  {"id": "qa", "role": "KYC acceptance gates and vendor sandbox.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "dev", "role": "Implement KYC integrations.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Bus to risk/compliance/support.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for kyc.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

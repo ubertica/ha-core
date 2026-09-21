@@ -1,0 +1,9 @@
+[
+  {"id": "train", "role": "Version trains, Fix Versions, calendars.", "artifact": "release/TRAIN.md", "ready": "train"},
+  {"id": "gonogo", "role": "Go/no-go checklist: risk+sre+sentinel+sec.", "artifact": "release/GONOGO.md", "ready": "gonogo"},
+  {"id": "notes", "role": "Release notes and customer comms drafts.", "artifact": "release/NOTES.md", "ready": "notes"},
+  {"id": "qa", "role": "Release QA evidence pack.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "dev", "role": "Release tooling/scripts changes.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Coordinate all teams on bus board.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for release.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

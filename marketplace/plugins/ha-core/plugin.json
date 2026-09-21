@@ -1,0 +1,23 @@
+{
+  "name": "ha-core",
+  "version": "0.2.0-wired",
+  "description": "Autonomous loops toolkit: ralph, SDD, TDD, verify-on-disk + ACT correction-loops (self-healing). The KEEP_CORE skills.",
+  "category": "agentic",
+  "keywords": [
+    "ralph",
+    "sdd",
+    "tdd",
+    "verify",
+    "correction-loops",
+    "act",
+    "autonomous",
+    "self-healing",
+    "ha-core"
+  ],
+  "axis": "toolkit",
+  "depends_on_skills": [
+    "ha-correction-loops",
+    "ralph-loop",
+    "subagent-driven-development"
+  ]
+}

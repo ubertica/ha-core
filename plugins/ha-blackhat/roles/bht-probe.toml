@@ -1,0 +1,4 @@
+description = "g3. Deep offense tests. FINDINGS.jsonl. Evidence or not a finding. Write probe/PROBE.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

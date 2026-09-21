@@ -1,0 +1,11 @@
+{
+  "name": "ha-mesh",
+  "version": "0.1.0-prepared",
+  "description": "HA mesh: muchachos + session-wire + ha-orch.",
+  "category": "agentic",
+  "keywords": [
+    "muchachos",
+    "session-wire",
+    "hat2"
+  ]
+}

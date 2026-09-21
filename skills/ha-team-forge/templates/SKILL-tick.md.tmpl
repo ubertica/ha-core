@@ -1,0 +1,17 @@
+---
+name: {{NAME}}-tick
+description: >
+  Periodic tick for {{NAME}}. Remainder lanes + sync + lead. Use for maintenance.
+---
+
+# {{NAME}}-tick
+
+Tick conductor for the {{NAME}} team.
+
+```bash
+bash ~/.grok/skills/{{NAME}}/scripts/ctl.sh tick --out "$OUT"
+# then workflow name={{NAME}}-tick
+```
+
+Skips lanes that have READY.* + on-disk artifact. Always runs sync/lead equivalents.
+See `references/AUTONOMY.md` and main `SKILL.md`.

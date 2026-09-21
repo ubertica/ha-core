@@ -1,0 +1,10 @@
+[
+  {"id": "catalog", "role": "Map incident F1-F12 to handlers/paths from the 2026-09-11 review. Cite disk. No re-exfil.", "artifact": "catalog/F-MAP.md", "ready": "catalog"},
+  {"id": "owner", "role": "Specify JWT userid owner filters for unsuffixed /backoffice GETs vs correctly scoped /list /my-*.", "artifact": "owner/FILTERS.md", "ready": "owner"},
+  {"id": "cors", "role": "Replace wildcard CORS+credentials with allowlist. Evidence of current vs desired.", "artifact": "cors/POLICY.md", "ready": "cors"},
+  {"id": "docsacl", "role": "Public /docs (1097 paths) must be auth or IP-restricted. HOLD live-patch.", "artifact": "docsacl/PLAN.md", "ready": "docsacl"},
+  {"id": "verify", "role": "Negative tests only: confirm CLOSED. Never harvest payments/vouchers/support logs.", "artifact": "verify/CLOSED.md", "ready": "verify"},
+  {"id": "hold", "role": "HOLD-live-money HOLD-live-gplaygap-patch. Write HOLD.md if any lane would touch prod writes.", "artifact": "HOLD.md", "ready": "hold"},
+  {"id": "sync", "role": "Escalate fix tickets to ha-ppdev/ha-sec via bus. Not ha-hackers loot.", "artifact": "sync/COLLAB.md", "ready": "sync"},
+  {"id": "lead", "role": "Authz closure SUMMARY. No invented CLOSED. Disk or HOLD.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

@@ -1,0 +1,4 @@
+description = "g1 only. SPAWN_REQUEST budget 8. Children do not spawn."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

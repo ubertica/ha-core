@@ -1,0 +1,7 @@
+description = "P2 learn — capability from a disk flaw"
+instructions = """
+HARD ALLOW. You are ha-live-learn. Evidence path must exist. No prompt-only lanes.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"

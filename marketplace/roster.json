@@ -1,0 +1,777 @@
+{
+  "law": "posture \u00d7 toolkit. Science sidecar. Product shelf. Do not dump grants. Do not install yet.",
+  "ha": [
+    {
+      "name": "ha-white",
+      "axis": "posture",
+      "category": "posture",
+      "keywords": [
+        "whitehat",
+        "bounty",
+        "scope"
+      ],
+      "description": "White-hat posture: scoped authorized test, evidence, reports. Does not own toolkits.",
+      "agents": [
+        "mode-white-hat"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/mode-white-hat.md"
+      ],
+      "inside": [
+        "ocl-report-generator",
+        "finding-validator",
+        "compliance-auditor"
+      ]
+    },
+    {
+      "name": "ha-gray",
+      "axis": "posture",
+      "category": "posture",
+      "keywords": [
+        "grayhat",
+        "bug-bounty",
+        "research"
+      ],
+      "description": "Gray-hat posture: independent vuln research, PoC, disclose/bounty. Not a toolkit.",
+      "agents": [
+        "mode-gray-hat"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/mode-gray-hat.md"
+      ]
+    },
+    {
+      "name": "ha-red",
+      "axis": "posture",
+      "category": "posture",
+      "keywords": [
+        "redhat",
+        "hunt",
+        "IR"
+      ],
+      "description": "Red-hat posture: hunt / IR / counter. Uses ha-osint + ha-recon + ha-infra.",
+      "agents": [
+        "mode-red-hat",
+        "incident-responder",
+        "threat-intel-analyst"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/mode-red-hat.md",
+        "/Users/c/.grok/agent-packs/from-claude/incident-responder.md",
+        "/Users/c/.grok/agent-packs/from-claude/threat-intel-analyst.md"
+      ]
+    },
+    {
+      "name": "ha-black",
+      "axis": "posture",
+      "category": "posture",
+      "keywords": [
+        "blackhat",
+        "adversary",
+        "kill-chain"
+      ],
+      "description": "Black-hat posture: full adversary emulation. Turns on toolkits; is not ha-offense.",
+      "agents": [
+        "mode-black-hat"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/mode-black-hat.md"
+      ]
+    },
+    {
+      "name": "ha-core",
+      "axis": "toolkit",
+      "category": "agentic",
+      "keywords": [
+        "ralph",
+        "sdd",
+        "verify",
+        "autonomous"
+      ],
+      "description": "Autonomous loops: ralph, SDD, TDD, verify-on-disk. The 15 KEEP_CORE skills.",
+      "skills": [
+        "ralph-loop",
+        "dispatching-parallel-agents",
+        "subagent-driven-development",
+        "verification-before-completion",
+        "verify-subagent-file-output-on-disk"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skill-packs/ha-core-promote/agent-browser",
+        "/Users/c/.grok/skill-packs/ha-core-promote/chrome-devtools",
+        "/Users/c/.grok/skill-packs/ha-core-promote/chrome-devtools-cli",
+        "/Users/c/.grok/skill-packs/ha-core-promote/dispatching-parallel-agents",
+        "/Users/c/.grok/skill-packs/ha-core-promote/ha-correction-loops",
+        "/Users/c/.grok/skill-packs/ha-core-promote/isolated-mcp-chrome-no-session-interference",
+        "/Users/c/.grok/skill-packs/ha-core-promote/lightpanda-agent",
+        "/Users/c/.grok/skill-packs/ha-core-promote/ralph-loop",
+        "/Users/c/.grok/skill-packs/ha-core-promote/remember",
+        "/Users/c/.grok/skill-packs/ha-core-promote/subagent-driven-development",
+        "/Users/c/.grok/skill-packs/ha-core-promote/systematic-debugging",
+        "/Users/c/.grok/skill-packs/ha-core-promote/test-driven-development",
+        "/Users/c/.grok/skill-packs/ha-core-promote/validate-llm-critique-against-verifiable-facts",
+        "/Users/c/.grok/skill-packs/ha-core-promote/verification-before-completion",
+        "/Users/c/.grok/skill-packs/ha-core-promote/verify-subagent-file-output-on-disk"
+      ],
+      "agents": [
+        "task-completion-verifier",
+        "ocl-orchestrator"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/task-completion-verifier.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-orchestrator.md"
+      ]
+    },
+    {
+      "name": "ha-mllm",
+      "axis": "toolkit",
+      "category": "agentic",
+      "keywords": [
+        "multi-llm",
+        "expressai",
+        "kimi",
+        "router"
+      ],
+      "description": "Multi-LLM router: ha-mllm skill + multi-llm/expressai/kimi MCP.",
+      "skills": [
+        "ha-mllm",
+        "expressai-fast",
+        "hat2"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/ha-mllm",
+        "/Users/c/.grok/skills/expressai-fast",
+        "/Users/c/.grok/skills/hat2"
+      ],
+      "mcp": [
+        "multi-llm",
+        "expressai",
+        "kimi"
+      ],
+      "agents": [
+        "grok-builder",
+        "kimi-builder"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/grok-builder.md",
+        "/Users/c/.grok/agent-packs/from-claude/kimi-builder.md"
+      ]
+    },
+    {
+      "name": "ha-cu",
+      "axis": "toolkit",
+      "category": "agentic",
+      "keywords": [
+        "computer-use",
+        "kimi-cu",
+        "chrome"
+      ],
+      "description": "Computer-use Mac: kimi-cu, WebBridge, peekaboo, chrome-devtools skill.",
+      "skills": [
+        "ha-computer-use",
+        "agent-browser",
+        "chrome-devtools",
+        "lightpanda-agent"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/ha-computer-use",
+        "/Users/c/.grok/skill-packs/ha-core-promote/agent-browser",
+        "/Users/c/.grok/skill-packs/ha-core-promote/chrome-devtools",
+        "/Users/c/.grok/skill-packs/ha-core-promote/chrome-devtools-cli",
+        "/Users/c/.grok/skill-packs/ha-core-promote/lightpanda-agent",
+        "/Users/c/.grok/skill-packs/ha-core-promote/isolated-mcp-chrome-no-session-interference"
+      ],
+      "mcp": [
+        "kimi-cu",
+        "kimi-control",
+        "macos-mcp"
+      ],
+      "agents": [
+        "chrome-realtime-controller"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/chrome-realtime-controller.md"
+      ]
+    },
+    {
+      "name": "ha-mesh",
+      "axis": "toolkit",
+      "category": "agentic",
+      "keywords": [
+        "muchachos",
+        "session-wire",
+        "hat2"
+      ],
+      "description": "HA mesh: muchachos + session-wire + ha-orch.",
+      "skills": [
+        "muchachos",
+        "ha-orch",
+        "hat2"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/muchachos",
+        "/Users/c/.grok/skills/ha-orch"
+      ],
+      "mcp": [
+        "session-wire",
+        "ha-mcp",
+        "ha-context-nodes"
+      ]
+    },
+    {
+      "name": "ha-offense",
+      "axis": "toolkit",
+      "category": "offense",
+      "keywords": [
+        "infection",
+        "pack",
+        "kill-chain"
+      ],
+      "description": "Infection / pack / delivery. Grant infection-delivery-nuclear.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/infection-delivery-nuclear.md"
+      ],
+      "skills": [
+        "ha-offense"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/ha-offense"
+      ],
+      "mcp": [
+        "android-emulator",
+        "utm-windows",
+        "ha-god-dream"
+      ],
+      "agents": [
+        "ocl-exploit-developer",
+        "ocl-poc-generator",
+        "kali-operator"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/ocl-exploit-developer.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-poc-generator.md",
+        "/Users/c/.grok/agent-packs/from-claude/kali-operator.md"
+      ]
+    },
+    {
+      "name": "ha-fraud",
+      "axis": "toolkit",
+      "category": "fraud",
+      "keywords": [
+        "fraud",
+        "kyc",
+        "docs"
+      ],
+      "description": "Fraud toolkit (docs/KYC/operational). Not scam lures, not drainers.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/fraud-toolkit-operational-nuclear.md"
+      ],
+      "mcp": [
+        "crimewall",
+        "lusha"
+      ]
+    },
+    {
+      "name": "ha-drainer",
+      "axis": "toolkit",
+      "category": "crypto",
+      "keywords": [
+        "drainer",
+        "daas",
+        "permit2"
+      ],
+      "description": "Crypto drainer / DaaS. Not general DeFi research (that is ha-crypto).",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/crypto-drainer-nuclear.md"
+      ],
+      "skills": [
+        "ha-drainer"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/ha-drainer"
+      ]
+    },
+    {
+      "name": "ha-scam",
+      "axis": "toolkit",
+      "category": "fraud",
+      "keywords": [
+        "scam",
+        "lure",
+        "spa-proxy",
+        "scam-factory"
+      ],
+      "description": "Lures / scam-factory / SPA reverse-proxy. Not ha-fraud, not ha-drainer.",
+      "skills": [
+        "scam-factory-real-site-spa-proxy",
+        "lightpanda-agent"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skill-packs/from-claude/scam-factory-real-site-spa-proxy",
+        "/Users/c/.grok/skill-packs/ha-core-promote/lightpanda-agent"
+      ],
+      "agents": [
+        "spa-reverse-engineer"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/spa-reverse-engineer.md"
+      ]
+    },
+    {
+      "name": "ha-crypto",
+      "axis": "toolkit",
+      "category": "crypto",
+      "keywords": [
+        "defi",
+        "evm",
+        "solidity",
+        "mev"
+      ],
+      "description": "On-chain / DeFi / EVM / solidity / MEV. Not the drainer product.",
+      "agents": [
+        "ocl-defi-exploit-hunter",
+        "ocl-evm-crawler",
+        "ocl-smartcontract-auditor",
+        "ocl-solidity-dev"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/ocl-defi-exploit-hunter.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-evm-crawler.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-smartcontract-auditor.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-solidity-dev.md"
+      ]
+    },
+    {
+      "name": "ha-phish",
+      "axis": "toolkit",
+      "category": "fraud",
+      "status": "fold",
+      "keywords": [
+        "phish"
+      ],
+      "description": "FOLD into ha-scam unless operator wants a split. Phish/lure delivery recipes.",
+      "inside": [
+        "conducting-spearphishing-simulation-campaign (from-claude, on-demand)"
+      ]
+    },
+    {
+      "name": "ha-infra",
+      "axis": "toolkit",
+      "category": "infra",
+      "keywords": [
+        "infra",
+        "c2",
+        "telegram",
+        "pm2"
+      ],
+      "description": "Infra / ops / comms. C2 lives here unless ha-c2 is split out.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/infra-ops-comms-nuclear.md"
+      ],
+      "skills": [
+        "ha-infra"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/ha-infra"
+      ],
+      "mcp": [
+        "telegram-native",
+        "telegram-control",
+        "discord-control",
+        "ha-mcp"
+      ]
+    },
+    {
+      "name": "ha-c2",
+      "axis": "toolkit",
+      "category": "infra",
+      "status": "fold",
+      "keywords": [
+        "c2"
+      ],
+      "description": "FOLD into ha-infra by default. Split only if C2 surface needs its own trust gate."
+    },
+    {
+      "name": "ha-fable",
+      "axis": "toolkit",
+      "category": "agentic",
+      "keywords": [
+        "fable",
+        "mythos",
+        "god"
+      ],
+      "description": "Fable/Mythos pack + GOD posture skills.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/fable-mythos-ha-god-nuclear.md",
+        "/Users/c/.grok/hard-allow/grants/terminaitor-ha-god-nuclear.md"
+      ],
+      "skills": [
+        "ha-fable-mythos"
+      ],
+      "skill_paths": [
+        "/Users/c/.grok/skills/ha-fable-mythos",
+        "/Users/c/.grok/skills/from-fable-pack"
+      ]
+    },
+    {
+      "name": "ha-nsfw",
+      "axis": "toolkit",
+      "category": "media",
+      "keywords": [
+        "nsfw",
+        "imagine"
+      ],
+      "description": "NSFW 18+ multimedia (Imagine). Pointer to grant; no extra MCP.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/nsfw-multimedia-nuclear.md"
+      ]
+    },
+    {
+      "name": "ha-dream",
+      "axis": "toolkit",
+      "category": "offense",
+      "keywords": [
+        "dream",
+        "forge",
+        "evolution"
+      ],
+      "description": "HA god-dream / forge / evolution control plane.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/ha-god-dream-nuclear.md"
+      ],
+      "mcp": [
+        "ha-god-dream"
+      ]
+    },
+    {
+      "name": "ha-osint",
+      "axis": "toolkit",
+      "category": "intel",
+      "keywords": [
+        "osint",
+        "crimewall",
+        "lusha"
+      ],
+      "description": "OSINT gateway: crimewall, lusha, grok search MCP.",
+      "mcp": [
+        "crimewall",
+        "lusha",
+        "grok"
+      ],
+      "agents": [
+        "ocl-osint-agent"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/ocl-osint-agent.md"
+      ]
+    },
+    {
+      "name": "ha-recon",
+      "axis": "toolkit",
+      "category": "offense",
+      "keywords": [
+        "recon",
+        "kali",
+        "hunter",
+        "pentest"
+      ],
+      "description": "Recon / hunter / kali / pentest agents. Exploit lib lives here.",
+      "agents": [
+        "kali-recon-agent",
+        "kali-web-agent",
+        "kali-privesc-agent",
+        "ocl-pentester",
+        "ocl-vuln-hunter",
+        "ocl-vuln-scanner",
+        "ocl-exploit-researcher",
+        "ocl-exploit-simulator",
+        "ocl-fuzzing-agent"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/kali-recon-agent.md",
+        "/Users/c/.grok/agent-packs/from-claude/kali-web-agent.md",
+        "/Users/c/.grok/agent-packs/from-claude/kali-privesc-agent.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-pentester.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-vuln-hunter.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-vuln-scanner.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-exploit-researcher.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-exploit-simulator.md",
+        "/Users/c/.grok/agent-packs/from-claude/ocl-fuzzing-agent.md"
+      ],
+      "inside": [
+        "Desktop/MCP domains: hunter, kali, exploit, chains, bounty \u2014 server currently down"
+      ]
+    },
+    {
+      "name": "ha-re",
+      "axis": "toolkit",
+      "category": "labs",
+      "keywords": [
+        "ghidra",
+        "reverse",
+        "module07"
+      ],
+      "description": "Reverse engineering: Ghidra MCP + module07.",
+      "mcp": [
+        "ghidra"
+      ]
+    },
+    {
+      "name": "ha-labs",
+      "axis": "toolkit",
+      "category": "labs",
+      "keywords": [
+        "android",
+        "windows",
+        "qemu"
+      ],
+      "description": "Lab VMs: android-emulator + UTM Windows. Linux qemu via module07 when live.",
+      "mcp": [
+        "android-emulator",
+        "utm-windows"
+      ]
+    },
+    {
+      "name": "ha-mitm",
+      "axis": "toolkit",
+      "category": "labs",
+      "keywords": [
+        "mitm",
+        "traffic",
+        "burp"
+      ],
+      "description": "Traffic/MITM (Desktop/MCP chrome/firefox/system_mitm). Server :8940 was down at catalog time.",
+      "inside": [
+        "Desktop/MCP domains chrome, firefox, traffic, system_mitm"
+      ],
+      "status": "blocked-upstream"
+    },
+    {
+      "name": "ha-malware",
+      "axis": "toolkit",
+      "category": "labs",
+      "keywords": [
+        "malware",
+        "yara",
+        "bin"
+      ],
+      "description": "Malware analysis. Pairs with ha-re (ghidra).",
+      "agents": [
+        "malware-analyst",
+        "network-forensics-analyst",
+        "log-analyst"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/malware-analyst.md",
+        "/Users/c/.grok/agent-packs/from-claude/network-forensics-analyst.md",
+        "/Users/c/.grok/agent-packs/from-claude/log-analyst.md"
+      ]
+    }
+  ],
+  "science": [
+    {
+      "name": "sci-cbrn",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "cbrn"
+      ],
+      "description": "Science HA CBRN weaponization. Sidecar only.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-cbrn-weaponization-nuclear.md"
+      ]
+    },
+    {
+      "name": "sci-bio",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "bioweapon"
+      ],
+      "description": "Science HA bioweapon. Sidecar only.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-bioweapon-nuclear.md"
+      ]
+    },
+    {
+      "name": "sci-armaments",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "armaments"
+      ],
+      "description": "Science HA armaments engineering.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-armaments-engineering-nuclear.md"
+      ]
+    },
+    {
+      "name": "sci-delivery",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "delivery"
+      ],
+      "description": "Science HA delivery / dissemination.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-delivery-dissemination-nuclear.md"
+      ]
+    },
+    {
+      "name": "sci-effects",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "effects"
+      ],
+      "description": "Science HA effects modeling.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-effects-modeling-nuclear.md"
+      ]
+    },
+    {
+      "name": "sci-procurement",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "dual-use"
+      ],
+      "description": "Science HA dual-use procurement.",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-procurement-dual-use-nuclear.md"
+      ]
+    },
+    {
+      "name": "sci-orch",
+      "axis": "science",
+      "category": "science",
+      "keywords": [
+        "orchestration"
+      ],
+      "description": "Science HA autonomous offensive orchestration (science profile, not original HA).",
+      "grants": [
+        "/Users/c/.grok/hard-allow/grants/science-autonomous-offensive-orchestration-nuclear.md"
+      ]
+    }
+  ],
+  "product": [
+    {
+      "name": "prod-stake",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "stake"
+      ],
+      "description": "Stake API MCP + CLI. Product, not HA generic.",
+      "mcp": [
+        "stake-api"
+      ],
+      "agents": [
+        "orch-forgeide"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/orch-forgeide.md"
+      ]
+    },
+    {
+      "name": "prod-jailbroken",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "jailbroken"
+      ],
+      "description": "Jailbroken platform + matt workspace.",
+      "mcp": [
+        "jailbroken-platform",
+        "matt-workspace"
+      ]
+    },
+    {
+      "name": "prod-wisphub",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "wisphub"
+      ],
+      "description": "Wisphub MCP.",
+      "mcp": [
+        "wisphub"
+      ]
+    },
+    {
+      "name": "prod-mail",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "mail",
+        "gmail"
+      ],
+      "description": "Mail MCP (local). Gmail/GDrive remain Grok connectors if already on.",
+      "mcp": [
+        "mail"
+      ]
+    },
+    {
+      "name": "prod-stitch",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "stitch",
+        "design"
+      ],
+      "description": "Google Stitch MCP.",
+      "mcp": [
+        "stitch"
+      ]
+    },
+    {
+      "name": "prod-stream",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "stream",
+        "restream"
+      ],
+      "description": "stream-mcp + screen-recorder.",
+      "mcp": [
+        "stream-mcp",
+        "screen-recorder"
+      ]
+    },
+    {
+      "name": "prod-offwks",
+      "axis": "product",
+      "category": "product",
+      "keywords": [
+        "offwks",
+        "offpay",
+        "leaksight"
+      ],
+      "description": "Offwks family orch agents (offpay, leaksight, logann, offguard, offmkt).",
+      "mcp": [
+        "offwks-context-mode"
+      ],
+      "agents": [
+        "orch-offpay",
+        "orch-leaksight",
+        "orch-logann",
+        "orch-offguard",
+        "orch-offmkt"
+      ],
+      "agent_paths": [
+        "/Users/c/.grok/agent-packs/from-claude/orch-offpay.md",
+        "/Users/c/.grok/agent-packs/from-claude/orch-leaksight.md",
+        "/Users/c/.grok/agent-packs/from-claude/orch-logann.md",
+        "/Users/c/.grok/agent-packs/from-claude/orch-offguard.md",
+        "/Users/c/.grok/agent-packs/from-claude/orch-offmkt.md"
+      ]
+    }
+  ],
+  "not_plugins": [
+    "1271 from-claude dump",
+    "67 Desktop/MCP domains as 1:1 plugins",
+    "gsap / frontend / roulette / feature-team-*",
+    "kali-web as its own plugin (inside ha-recon)",
+    "allow-star-universal (session law, not a plugin)"
+  ]
+}

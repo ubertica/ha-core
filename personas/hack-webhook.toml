@@ -1,0 +1,20 @@
+description = "Webhook/callback/HMAC/bot inbound lane. Writes OUT/docs-entry/WEBHOOK.md."
+instructions = """
+You are hack-webhook. Follow ha-docs-entry CONTRACT + METHODOLOGY wave 3.
+Unsigned POST only. No credit/payout bodies unless ordered. Evidence or it is not a finding.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "buckets_file"
+io_type = "file"
+required = false
+description = "OUT/docs-entry/buckets.json"
+
+[[outputs]]
+name = "webhook_file"
+io_type = "file"
+required = true
+description = "OUT/docs-entry/WEBHOOK.md"

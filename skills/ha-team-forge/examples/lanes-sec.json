@@ -1,0 +1,9 @@
+[
+  {"id": "threat", "role": "Threat model for wallet/fintech surfaces.", "artifact": "sec/THREAT-MODEL.md", "ready": "threat"},
+  {"id": "appsec", "role": "SAST/DAST/secrets scanning plan and findings.", "artifact": "sec/APPSEC.md", "ready": "appsec"},
+  {"id": "secops", "role": "SecOps playbooks; distinct from AMS sentinel perimeter.", "artifact": "sec/SECOPS.md", "ready": "secops"},
+  {"id": "qa", "role": "Security gates before release.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "dev", "role": "Security fixes and hardening PRs.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Bus to sre/release/sentinel/PPITS.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for sec.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

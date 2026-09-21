@@ -1,0 +1,142 @@
+{
+  "id": "authz-brutal",
+  "title": "Brutal authz: BOLA/IDOR/JWT/mass-assign/batch/race/tenant. Deeper than one authz lane.",
+  "groups": ["preflight", "matrix", "exec", "adversary", "weapon"],
+  "fallback": { "g3": "g4" },
+  "verify_after": ["w10-red-on-red"],
+  "weapon_requires_go": true,
+  "waves": [
+    {
+      "id": "w00-preflight",
+      "group": "preflight",
+      "title": "HA + SOCKS + JWT TTL if TOKEN_FILE",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/PLAN.json",
+      "ready": "w00-preflight"
+    },
+    {
+      "id": "w01-object-inventory",
+      "group": "matrix",
+      "title": "Every object id in paths/bodies/graphql from api-map or live",
+      "seats": ["g2"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "authz/objects.md",
+      "ready": "w01-object-inventory"
+    },
+    {
+      "id": "w02-sibling-idor",
+      "group": "matrix",
+      "title": "Horizontal: swap id, uuid, sequential, encoded, nested",
+      "seats": ["g2", "g3"],
+      "mode": "round",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "authz/sibling-findings.md",
+      "ready": "w02-sibling-idor"
+    },
+    {
+      "id": "w03-vertical-role",
+      "group": "matrix",
+      "title": "Vertical: x-user-role, isAdmin, role in body, JWT role vs userid",
+      "seats": ["g2", "g3"],
+      "mode": "round",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "authz/vertical-findings.md",
+      "ready": "w03-vertical-role"
+    },
+    {
+      "id": "w04-tenant",
+      "group": "matrix",
+      "title": "Tenant/org/brand/skin: host, header, path prefix, jwt aud",
+      "seats": ["g2", "g3"],
+      "mode": "round",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "authz/tenant-findings.md",
+      "ready": "w04-tenant"
+    },
+    {
+      "id": "w05-mass-assign",
+      "group": "matrix",
+      "title": "PATCH/PUT extra fields: role, balance, kyc, userid, price",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "authz/mass-assign-findings.md",
+      "ready": "w05-mass-assign"
+    },
+    {
+      "id": "w06-jwt-gadget",
+      "group": "matrix",
+      "title": "alg/kid/jku/aud/iss/exp/none/confuse bearer vs cookie",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "authz/jwt-findings.md",
+      "ready": "w06-jwt-gadget"
+    },
+    {
+      "id": "w07-batch-alias",
+      "group": "matrix",
+      "title": "GraphQL aliases/batch, REST bulk, CSV import as IDOR amp",
+      "seats": ["g3", "g2"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "authz/batch-findings.md",
+      "ready": "w07-batch-alias"
+    },
+    {
+      "id": "w08-verb-path",
+      "group": "matrix",
+      "title": "Verb tamper, trailing slash, ;.json, override headers, method tunnel",
+      "seats": ["g2"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "authz/verb-findings.md",
+      "ready": "w08-verb-path"
+    },
+    {
+      "id": "w09-race",
+      "group": "exec",
+      "title": "TOCTOU: redeem/approve/limit; dummy parallel, no live money",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "authz/race-findings.md",
+      "ready": "w09-race"
+    },
+    {
+      "id": "w10-red-on-red",
+      "group": "adversary",
+      "title": "g4 kills public-ok and same-user false positives",
+      "seats": ["g4"],
+      "mode": "parallel",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "authz-refute.md",
+      "ready": "w10-red-on-red"
+    },
+    {
+      "id": "w11-verify-lead",
+      "group": "weapon",
+      "title": "VERIFY + FINDINGS + chain if two GOs",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "FINDINGS.md",
+      "ready": "w11-verify-lead"
+    }
+  ]
+}

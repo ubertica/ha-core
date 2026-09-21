@@ -1,0 +1,10 @@
+[
+  {"id": "docs", "role": "Write docs index, epics, stories. Map product surface.", "artifact": "DOCS-INDEX.md", "ready": "docs"},
+  {"id": "pm", "role": "PM board, JIRA model, backlog. SITS/SDU style.", "artifact": "pm/BACKLOG.md", "ready": "pm"},
+  {"id": "qa", "role": "QA plan, gates, acceptance. Evidence driven.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "test", "role": "Test reports, harness. Run and capture.", "artifact": "test/TEST-REPORT.md", "ready": "test"},
+  {"id": "dev", "role": "Implement changes; write CHANGES.md", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "repo", "role": "Repo hygiene, structure, hygiene report.", "artifact": "repo/REPO-STATUS.md", "ready": "repo"},
+  {"id": "sync", "role": "Collab sync status with other teams (sentinel).", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "Synthesize SUMMARY.md + BOARD.md from all READY lanes.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

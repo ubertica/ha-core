@@ -1,0 +1,588 @@
+{
+  "grok_home": "/Users/c/.grok",
+  "run_dir": "/var/folders/nk/grxm9hk11992lv2k9h3100gw0000gn/T/learn/20260917-220408",
+  "generated_at": "2026-09-17T22:07:48+00:00",
+  "disuse_evidence": {
+    "sufficient": true,
+    "span_days": 13.6,
+    "reason": "every working directory, 66 sessions over 14 days"
+  },
+  "params": {
+    "days": 14,
+    "since_last": false,
+    "cutoff": "2026-09-03T22:04:08.099040+00:00",
+    "include_headless": false,
+    "include_subagents": false,
+    "cwd": [],
+    "exclude_cwd": [
+      "/private/tmp",
+      "/private/var/folders/nk/grxm9hk11992lv2k9h3100gw0000gn/T",
+      "/tmp",
+      "/var/folders",
+      "/var/folders/nk/grxm9hk11992lv2k9h3100gw0000gn/T"
+    ],
+    "drop_patterns": [],
+    "min_turns": 1,
+    "session_ids": [],
+    "limit": 0
+  },
+  "estimate": {
+    "sessions": 66,
+    "agents": 12,
+    "mappers": 7,
+    "reducers": 1,
+    "tokens": "<redacted>",
+    "tokens_m": "<redacted>",
+    "minutes": [
+      26,
+      61
+    ]
+  },
+  "sessions_seen": 601,
+  "sessions_kept": 66,
+  "dropped": {
+    "older_than_window": 93,
+    "subagent": 434,
+    "smoke_test": 3,
+    "no_human_turns": 4,
+    "excluded_cwd": 1
+  },
+  "human_turns_total": 537,
+  "repeated_single_turn_sessions": 0,
+  "project_roots": [
+    "/Users/c/Desktop/secops",
+    "/Users/c/Desktop/stake-api",
+    "/Users/c/dev/ha-live"
+  ],
+  "kept": [
+    {
+      "index": 0,
+      "id": "01a0b14d-b668-72c0-97e3-a76f0e258bce",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 12,
+      "updated_at": "2026-09-17T22:04:07.939121Z",
+      "title": "Complete Beginner Explanation of ESlow"
+    },
+    {
+      "index": 1,
+      "id": "01a0b14b-b9e4-7141-8ad6-3d064a2adfd0",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 1,
+      "updated_at": "2026-09-17T21:37:07.441068Z",
+      "title": "Spanish Request for Nucleares"
+    },
+    {
+      "index": 2,
+      "id": "01a0ae78-f447-75c3-99d6-7e3514f2ba32",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 1,
+      "updated_at": "2026-09-17T19:30:46.292229Z",
+      "title": "Spanish Hello Are You There Greeting"
+    },
+    {
+      "index": 3,
+      "id": "01a0b0c3-01a0-71e0-a3ce-c8dfe9073ede",
+      "cwd": "/Users/c",
+      "turns": 2,
+      "updated_at": "2026-09-17T19:25:12.444101Z",
+      "title": "Party Query Initial Session Title"
+    },
+    {
+      "index": 4,
+      "id": "01a0adf8-f48a-79f1-ada5-505b7386babb",
+      "cwd": "/Users/c",
+      "turns": 9,
+      "updated_at": "2026-09-17T19:25:12.440920Z",
+      "title": "Fix Codex --hard-allow reuse flags"
+    },
+    {
+      "index": 5,
+      "id": "01a0ae44-26de-7372-9b13-ff57970d7381",
+      "cwd": "/Users/c",
+      "turns": 12,
+      "updated_at": "2026-09-17T19:25:12.440861Z",
+      "title": "PumaPay AgentesBet Security Audit Vulnerability Evidence"
+    },
+    {
+      "index": 6,
+      "id": "01a0ae71-c55c-7c10-815a-7052ada5de11",
+      "cwd": "/Users/c",
+      "turns": 1,
+      "updated_at": "2026-09-17T08:18:16.756290Z",
+      "title": "Exact <redacted>-OK Reply Request"
+    },
+    {
+      "index": 7,
+      "id": "01a08f56-ff63-7e23-8d6a-5d2e9ba1aa45",
+      "cwd": "/Users/c/Desktop/secops",
+      "turns": 1,
+      "updated_at": "2026-09-17T04:58:41.401398Z",
+      "title": "Initial User Greeting Hello"
+    },
+    {
+      "index": 8,
+      "id": "01a0ada3-25bb-7612-a478-3ece6aa3a938",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 1,
+      "updated_at": "2026-09-17T04:57:51.492105Z",
+      "title": "Refuse stealer logs Stake account fraud"
+    },
+    {
+      "index": 9,
+      "id": "01a0ad56-4110-76a0-bbcf-052638fcf0d9",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 1,
+      "updated_at": "2026-09-17T04:57:51.491603Z",
+      "title": "Spawn Parallel Sessions Cooperative Interaction"
+    },
+    {
+      "index": 10,
+      "id": "01a0ac00-4dd6-7722-aff4-3387c838b2b0",
+      "cwd": "/Users/c",
+      "turns": 7,
+      "updated_at": "2026-09-17T04:38:14.807781Z",
+      "title": "Full Screen Record Stop Triple Spacebar"
+    },
+    {
+      "index": 11,
+      "id": "01a0ab6c-f91d-7ad1-81a6-797be2e69e43",
+      "cwd": "/Users/c",
+      "turns": 1,
+      "updated_at": "2026-09-17T04:36:28.994541Z",
+      "title": "web3wallet"
+    },
+    {
+      "index": 12,
+      "id": "01a0a8b5-04df-7fd3-bb20-79a1e3b90188",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 8,
+      "updated_at": "2026-09-16T21:34:32.609576Z",
+      "title": "HA on status check query"
+    },
+    {
+      "index": 13,
+      "id": "01a0a7bc-ae17-70d1-b989-c9b7c75c46ca",
+      "cwd": "/Users/c",
+      "turns": 12,
+      "updated_at": "2026-09-16T17:50:24.116772Z",
+      "title": "Is HA Active Status Check"
+    },
+    {
+      "index": 14,
+      "id": "01a0ab33-aedf-7381-bc01-f4f254414f6d",
+      "cwd": "/Users/c",
+      "turns": 1,
+      "updated_at": "2026-09-16T17:50:24.113375Z",
+      "title": "Puma Support Agent Conversation Theater Setup"
+    },
+    {
+      "index": 15,
+      "id": "01a0a972-aacf-7d42-8417-5eba13066762",
+      "cwd": "/Users/c",
+      "turns": 10,
+      "updated_at": "2026-09-16T17:50:24.105426Z",
+      "title": "quiero descargar todo el sitio cryptorino.io completo, incluyendo todo lo"
+    },
+    {
+      "index": 16,
+      "id": "01a0a9f0-201d-7562-9e83-5b05aaf22f6e",
+      "cwd": "/Users/c",
+      "turns": 7,
+      "updated_at": "2026-09-16T17:50:24.104678Z",
+      "title": "Vertex Payment Processor Puma Incident"
+    },
+    {
+      "index": 17,
+      "id": "01a0a6f5-1994-7f03-b293-0e865eac4141",
+      "cwd": "/Users/c",
+      "turns": 31,
+      "updated_at": "2026-09-16T01:01:10.567962Z",
+      "title": "ganamosnet.org"
+    },
+    {
+      "index": 18,
+      "id": "01a0a652-aa03-7ec2-99e4-0f7368f2a306",
+      "cwd": "/Users/c",
+      "turns": 6,
+      "updated_at": "2026-09-15T21:24:57.887404Z",
+      "title": "hOLA"
+    },
+    {
+      "index": 19,
+      "id": "01a0a53b-bffd-7a60-93d2-f19fd85185a1",
+      "cwd": "/",
+      "turns": 5,
+      "updated_at": "2026-09-15T18:37:29.335382Z",
+      "title": "HA Encendido Status Check"
+    },
+    {
+      "index": 20,
+      "id": "01a0a01d-ea6a-76e3-b8c9-e60d1929e324",
+      "cwd": "/Users/c/.grok",
+      "turns": 2,
+      "updated_at": "2026-09-15T13:21:38.539749Z",
+      "title": "Continuing Previous Spanish Codebase Session"
+    },
+    {
+      "index": 21,
+      "id": "01a0a01e-0ae9-7a80-b667-946696747aac",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 1,
+      "updated_at": "2026-09-15T13:21:32.588976Z",
+      "title": "Seguimos Conversation Continuation"
+    },
+    {
+      "index": 22,
+      "id": "01a09ec5-46d0-7b30-b7d7-b294cb0b2a07",
+      "cwd": "/Users/c/.grok",
+      "turns": 2,
+      "updated_at": "2026-09-14T13:24:28.052221Z",
+      "title": "Learn Command Session Initiation"
+    },
+    {
+      "index": 23,
+      "id": "01a09ecb-c830-7103-a4e8-05519bc20717",
+      "cwd": "/Users/c/.grok",
+      "turns": 13,
+      "updated_at": "2026-09-14T13:24:28.051394Z",
+      "title": ".grok"
+    },
+    {
+      "index": 24,
+      "id": "01a09ec5-7df5-77a3-a5ec-a11d16c446c7",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 17,
+      "updated_at": "2026-09-14T13:24:25.033499Z",
+      "title": "Casual Greeting Ha On Query"
+    },
+    {
+      "index": 25,
+      "id": "01a09ec7-0ebc-7ac1-98a5-99a9f8b946f1",
+      "cwd": "/Users/c/John",
+      "turns": 7,
+      "updated_at": "2026-09-14T12:59:48.291226Z",
+      "title": "HA Injection into ChatGPT App"
+    },
+    {
+      "index": 26,
+      "id": "01a09f71-f40f-7af0-90f4-c80c8b9eb9a9",
+      "cwd": "/",
+      "turns": 1,
+      "updated_at": "2026-09-14T12:25:41.994468Z",
+      "title": "Fix Safari ExpressVPN Argentina Detection Mac"
+    },
+    {
+      "index": 27,
+      "id": "01a09ec7-282f-71b2-bc02-3aa7647d106f",
+      "cwd": "/",
+      "turns": 4,
+      "updated_at": "2026-09-14T12:25:41.994361Z",
+      "title": "Install Codex on All Available Machines"
+    },
+    {
+      "index": 28,
+      "id": "01a08db7-4684-7982-9357-9fbd63b0f9b6",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 6,
+      "updated_at": "2026-09-14T10:08:19.713187Z",
+      "title": "HOLA"
+    },
+    {
+      "index": 29,
+      "id": "01a09eab-60f4-7971-913d-d536d5d9b717",
+      "cwd": "/Users/c/John",
+      "turns": 5,
+      "updated_at": "2026-09-14T07:11:02.307296Z",
+      "title": "Checking if HA High Availability enabled"
+    },
+    {
+      "index": 30,
+      "id": "01a09e8d-9898-7e20-b07d-dd7b9d2b82a2",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 3,
+      "updated_at": "2026-09-14T06:42:54.612129Z",
+      "title": "Read-Only Home Assistant Double-Click Mac App"
+    },
+    {
+      "index": 31,
+      "id": "01a09d59-ecd3-7e72-a1f5-b811677aa875",
+      "cwd": "/Users/c",
+      "turns": 1,
+      "updated_at": "2026-09-14T04:47:21.478644Z",
+      "title": "DESK Grok 4.6 HA Voice Activation"
+    },
+    {
+      "index": 32,
+      "id": "01a09d35-ec9b-7f52-9663-023bff04d493",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 2,
+      "updated_at": "2026-09-14T04:46:57.379583Z",
+      "title": "HA Real-time Voice Chat ElevenLabs TTS"
+    },
+    {
+      "index": 33,
+      "id": "01a09b06-8c45-7f71-8b0b-00aef83745da",
+      "cwd": "/Users/c/Desktop/stake-api",
+      "turns": 18,
+      "updated_at": "2026-09-14T02:22:53.808776Z",
+      "title": "Claim Two Codes Across Stake Accounts Catalog"
+    },
+    {
+      "index": 34,
+      "id": "01a09d58-c98f-7502-8127-238154fd8402",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 1,
+      "updated_at": "2026-09-14T00:37:32.419581Z",
+      "title": "User demands sole response pong"
+    },
+    {
+      "index": 35,
+      "id": "01a09ba1-80a6-7d21-941c-9d07bccc16af",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 14,
+      "updated_at": "2026-09-13T20:28:23.102139Z",
+      "title": "Agentic OS Development Continuation on AMS"
+    },
+    {
+      "index": 36,
+      "id": "01a098cb-1a7a-7583-bb6a-c9e87f0dd4de",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 2,
+      "updated_at": "2026-09-13T17:05:32.337194Z",
+      "title": "Open Boldt Jira Crowd Admin Chrome"
+    },
+    {
+      "index": 37,
+      "id": "01a0921a-5473-7040-bbcb-f3a618dd34e8",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 14,
+      "updated_at": "2026-09-13T13:47:28.645485Z",
+      "title": "What Can You Do Capabilities Query"
+    },
+    {
+      "index": 38,
+      "id": "01a093d9-abb3-70f2-ac36-4fe5b3b02603",
+      "cwd": "/Users/c/Desktop/stake-api",
+      "turns": 25,
+      "updated_at": "2026-09-12T15:20:11.344931Z",
+      "title": "Telegram Stake Claimer Background Mac Clipboard"
+    },
+    {
+      "index": 39,
+      "id": "01a0906d-6b55-7c00-9a20-44039732ec6d",
+      "cwd": "/Users/c/dev/ha-live",
+      "turns": 22,
+      "updated_at": "2026-09-12T12:12:45.868531Z",
+      "title": "HA-Live Continuity Board Hive AMS Ship"
+    },
+    {
+      "index": 40,
+      "id": "01a08fb8-d76b-7f93-8836-5ad04a9b1404",
+      "cwd": "/Users/c",
+      "turns": 20,
+      "updated_at": "2026-09-12T12:12:32.270083Z",
+      "title": "Test xAI API Key with Request"
+    },
+    {
+      "index": 41,
+      "id": "01a094e2-8ddc-7882-96b5-10fa09f23098",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 42,
+      "updated_at": "2026-09-12T11:32:27.671051Z",
+      "title": "X xAI HackerOne Bug Bounty Rules"
+    },
+    {
+      "index": 42,
+      "id": "01a08e80-886e-7ea3-b50e-a62910d64226",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 25,
+      "updated_at": "2026-09-12T11:32:09.644761Z",
+      "title": "PumaPay HA Parallel Recon Authz Exploit Handoff"
+    },
+    {
+      "index": 43,
+      "id": "01a09308-b474-7ee3-bbfe-38a5eaada34f",
+      "cwd": "/Users/c/Desktop/puma",
+      "turns": 5,
+      "updated_at": "2026-09-12T05:09:53.347880Z",
+      "title": "UI/UX MVP Billetera Virtual Design"
+    },
+    {
+      "index": 44,
+      "id": "01a08fcc-d39b-7621-97b3-2231eccb4602",
+      "cwd": "/Users/c/dev/ha-live",
+      "turns": 23,
+      "updated_at": "2026-09-11T12:22:33.819990Z",
+      "title": "HA-Live Hive Board Terminaitor P1-P4 Ship"
+    },
+    {
+      "index": 45,
+      "id": "01a08cdf-b6bc-7bd2-93e3-3e506b10aa18",
+      "cwd": "/Users/c",
+      "turns": 1,
+      "updated_at": "2026-09-11T03:25:52.568100Z",
+      "title": "BulkSMS Gateway API SMS Sending Rest"
+    },
+    {
+      "index": 46,
+      "id": "01a08e50-91dd-7ea3-8aea-37ed45e81436",
+      "cwd": "/Users/c",
+      "turns": 21,
+      "updated_at": "2026-09-11T03:25:52.568055Z",
+      "title": "pumapay"
+    },
+    {
+      "index": 47,
+      "id": "01a087d0-8ff6-7080-88b3-27ca1d7e2bf3",
+      "cwd": "/Users/c",
+      "turns": 8,
+      "updated_at": "2026-09-09T20:36:27.399132Z",
+      "title": "Casual Spanish greeting inquiry"
+    },
+    {
+      "index": 48,
+      "id": "01a08746-2dda-7023-a235-b63df33f6728",
+      "cwd": "/Users/c",
+      "turns": 9,
+      "updated_at": "2026-09-09T18:56:53.258179Z",
+      "title": "Flash <redacted> Smart Contract Deployment Project"
+    },
+    {
+      "index": 49,
+      "id": "01a082ff-69c5-7f22-9bb4-3dc142bd87a7",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 15,
+      "updated_at": "2026-09-09T17:30:32.955389Z",
+      "title": "Greeting and Initial Hello Message"
+    },
+    {
+      "index": 50,
+      "id": "01a082c0-2384-70b1-acdd-d6e3637c40dc",
+      "cwd": "/Users/c/.grok/hard-allow",
+      "turns": 19,
+      "updated_at": "2026-09-09T08:08:20.768967Z",
+      "title": "Initial User Greeting"
+    },
+    {
+      "index": 51,
+      "id": "4d5daec2-836e-44c4-8131-28507cba8ef4",
+      "cwd": "/Users/c/dev/coop-gordo-john",
+      "turns": 1,
+      "updated_at": "2026-09-08T21:39:58.197110Z",
+      "title": "Spawn IntelX and OSINT Coop Agents"
+    },
+    {
+      "index": 52,
+      "id": "a0df0775-0bb7-401d-b799-444ca75806d4",
+      "cwd": "/Users/c/dev/coop-gordo-john",
+      "turns": 1,
+      "updated_at": "2026-09-08T21:35:45.412778Z",
+      "title": "Create Spawn IntelX OSINT Agents"
+    },
+    {
+      "index": 53,
+      "id": "386d6035-9aeb-4a79-b481-f20b460e2cb7",
+      "cwd": "/Users/c/dev/coop-gordo-john",
+      "turns": 1,
+      "updated_at": "2026-09-08T21:30:33.466787Z",
+      "title": "Create IntelX and OSINT Spawning Agents"
+    },
+    {
+      "index": 54,
+      "id": "830f46d0-847c-4917-8163-3730b1d10225",
+      "cwd": "/Users/c/dev/coop-gordo-john",
+      "turns": 1,
+      "updated_at": "2026-09-08T21:20:33.725381Z",
+      "title": "List coop-gordo-john directory files"
+    },
+    {
+      "index": 55,
+      "id": "3b238064-997b-469b-8427-0165f4b88e34",
+      "cwd": "/Users/c/dev/coop-gordo-john",
+      "turns": 1,
+      "updated_at": "2026-09-08T21:12:20.695474Z",
+      "title": ""
+    },
+    {
+      "index": 56,
+      "id": "01a06c7d-4e14-7221-b531-1dd0bcdd694d",
+      "cwd": "/Users/c",
+      "turns": 6,
+      "updated_at": "2026-09-04T13:01:55.401839Z",
+      "title": "hola"
+    },
+    {
+      "index": 57,
+      "id": "01a06c72-363e-78f0-a87c-ba5d6c9d9c51",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 5,
+      "updated_at": "2026-09-04T12:51:54.375946Z",
+      "title": "hola esta activo el nuclear?"
+    },
+    {
+      "index": 58,
+      "id": "01a06c66-421c-7ab2-82ae-5c0a903ecf82",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 12,
+      "updated_at": "2026-09-04T12:43:07.959406Z",
+      "title": "hola"
+    },
+    {
+      "index": 59,
+      "id": "01a06c5d-25fd-7fa0-a5dd-47bf01b3321e",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 4,
+      "updated_at": "2026-09-04T12:30:16.952532Z",
+      "title": "resume"
+    },
+    {
+      "index": 60,
+      "id": "01a06c59-1121-7512-9c8b-b827ebc12890",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 2,
+      "updated_at": "2026-09-04T12:20:06.922858Z",
+      "title": "hola"
+    },
+    {
+      "index": 61,
+      "id": "01a06c50-a70e-7d93-856c-295c2abe04ec",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 5,
+      "updated_at": "2026-09-04T12:15:48.821553Z",
+      "title": "hola"
+    },
+    {
+      "index": 62,
+      "id": "01a06c42-a3a1-7f62-b781-578e84cb93d8",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 9,
+      "updated_at": "2026-09-04T12:06:42.115739Z",
+      "title": "hola"
+    },
+    {
+      "index": 63,
+      "id": "01a06c2d-1852-7c82-ab79-ebf8eb8786ad",
+      "cwd": "/Users/c/.gordito/sidebar-orch",
+      "turns": 7,
+      "updated_at": "2026-09-04T11:45:24.534021Z",
+      "title": "hola"
+    },
+    {
+      "index": 64,
+      "id": "01a06b2a-16a0-79e2-993c-eff73bdd65fd",
+      "cwd": "/Users/c/dev/genesis-labs",
+      "turns": 4,
+      "updated_at": "2026-09-04T07:42:49.101517Z",
+      "title": "muchachos HARD ALLOW: executing. Sos Grok Build en la sesi\u00f3n"
+    },
+    {
+      "index": 65,
+      "id": "01a06b27-ca6d-7412-86bc-382ad5f6740f",
+      "cwd": "/Users/c/dev/desk-pet",
+      "turns": 1,
+      "updated_at": "2026-09-04T06:44:58.484298Z",
+      "title": "/ask how do set up an api key?"
+    }
+  ],
+  "prior_decisions": true
+}

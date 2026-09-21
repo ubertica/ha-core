@@ -1,0 +1,10 @@
+[
+  {"id": "watch", "role": "Perpetual watch + mirror evidence from AMS.", "artifact": "watch/EVIDENCE.md", "ready": "watch"},
+  {"id": "audit", "role": "Audit perimeter, health, logs.", "artifact": "audit/REPORT.md", "ready": "audit"},
+  {"id": "ollama", "role": "Local ollama ask + improve suggestions.", "artifact": "ollama/OUT.md", "ready": "ollama"},
+  {"id": "improve", "role": "Apply small autonomous improvements.", "artifact": "improve/CHANGES.md", "ready": "improve"},
+  {"id": "release", "role": "Release prep, tags, notes.", "artifact": "release/NOTES.md", "ready": "release"},
+  {"id": "escalate", "role": "Escalate to HA Grok over bus.", "artifact": "escalate/LOG.jsonl", "ready": "escalate"},
+  {"id": "collab", "role": "Collab with pumapay over shared bus.", "artifact": "collab/NOTES.jsonl", "ready": "collab"},
+  {"id": "lead", "role": "Synthesize sentinel SUMMARY + status.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

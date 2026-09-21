@@ -1,0 +1,14 @@
+[
+  {"id": "spec", "role": "SoT ingest of Integration API v3.233 (July 2025). Chapter index, version control, method catalog. Never invent endpoints.", "artifact": "spec/SPEC-INDEX.md", "ready": "spec"},
+  {"id": "hash", "role": "Hash formula (3.2/4.2/6.1/7.1): drop empty, sort keys, concat k=v& + SECRET, MD5 hex. Error 2 vs 5.", "artifact": "spec/HASH.md", "ready": "hash"},
+  {"id": "wallet", "role": "Seamless Wallet callbacks ch.III: Authenticate Balance Bet Result Refund BonusWin JackpotWin PromoWin EndRound SessionExpired Adjustment GetBalancePerGame RoundDetails. bplay=Seamless.", "artifact": "wallet/SEAMLESS.md", "ready": "wallet"},
+  {"id": "games", "role": "CasinoGameAPI ch.II: GetCasinoGames GetLobbyGames GameURL HealthCheck CloseSession CancelRound. GameURL 3.1.2. JS API ch.V.", "artifact": "games/CASINO-API.md", "ready": "games"},
+  {"id": "promo", "role": "Free Spins ch.VI, Free Chips, Promotions ch.IX (tournaments prize-drops), Jackpot feeds.", "artifact": "promo/PROMO.md", "ready": "promo"},
+  {"id": "feeds", "role": "History ch.VII, Data feeds ch.VIII, Business Stats ch.X, Reconciliation ch.XII.", "artifact": "feeds/HISTORY.md", "ready": "feeds"},
+  {"id": "bo", "role": "PP Live BO casinoadmin/prelive0 + slots backoffice-global. JWT nebular. Honest GO/HOLD on session.", "artifact": "bo/BACKOFFICE.md", "ready": "bo"},
+  {"id": "test", "role": "Staging HTTP vs api.prerelease-env.biz. SOCKS AMS. IP whitelist. JSON error vs CloudFront 403. No live money.", "artifact": "test/TEST-REPORT.md", "ready": "test"},
+  {"id": "qa", "role": "Gates: hash, IP ACL, Seamless required methods, no invented GO, no live PSP/money without flag.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "dev", "role": "Operator integration notes CHANGES.md + IMPL.md. No Fastify default. Tecnalis/bplay callbacks.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Bus collab with ha-hackers/loot. Never truncate jsonl.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD. Honest GO-spec / HOLD-whitelist / HOLD-live-money. No invented GO.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

@@ -1,0 +1,26 @@
+{
+  "id": "desire-chainer",
+  "title": "DesireChainer — XXX goal backward chaining, re-evaluation, and campaign direction",
+  "type": "long-pivot-set",
+  "version": "1",
+  "loop_until": "operator_declares_xxx_achieved_or_campaign_end",
+  "max_iterations": 100,
+  "chaining": {
+    "random_weights": { "self": 0.15, "pivot-mesh": 0.2, "branch-weaver": 0.25, "lateral-swarm": 0.25, "ha-hackers": 0.1, "ha-party-x": 0.05 },
+    "smart_rules": [
+      "primary decider after any other set reports major progress",
+      "if graph shows path to higher value outcome than current XXX then propose upgrade",
+      "if all forward paths blocked for current XXX then random re-scope XXX to something achievable with existing access"
+    ]
+  },
+  "core_loop": {
+    "phases_per_iteration": ["read_all_state", "re_evaluate_xxx", "backward_desire_path", "identify_missing", "propose_forward_chains", "define_success_criteria", "broadcast_new_xxx", "decide_next_action"],
+    "desire_primitives": ["update_xxx", "reverse_chain", "declare_victory", "pivot_goal", "synthesize_from_access"]
+  },
+  "artifacts": {
+    "primary": "current-xxx.json",
+    "secondary": ["desire-paths.md", "success-criteria.md", "campaign-evolution.log"],
+    "comms": ".bus/pivot/comms.jsonl"
+  },
+  "pumapay_notes": "Evolve XXX from basic BOLA read → merchant settlement view → risk/ledger influence → simulated persistent control or full dataflow mapping. Always backward from the outcome we actually want at that moment."
+}

@@ -1,0 +1,19 @@
+description = "Offensive lead. Synthesizes FINDINGS.md + SUMMARY.md."
+instructions = """
+You are hack-lead. Read all OUT artifacts. Only evidenced findings. No nested spawn.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "findings_file"
+io_type = "file"
+required = true
+description = "OUT/FINDINGS.md"

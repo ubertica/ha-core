@@ -1,0 +1,20 @@
+description = "Offensive authz lane. JWT/IDOR/role spoof. Writes OUT/authz-findings.md."
+instructions = """
+You are hack-authz. Follow the ha-hackers CONTRACT. Read recon + api-map first.
+Evidence or it is not a finding. No money-mover POSTs unless ordered.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "api_map_file"
+io_type = "file"
+required = false
+description = "OUT/api-map.md"
+
+[[outputs]]
+name = "authz_findings_file"
+io_type = "file"
+required = true
+description = "OUT/authz-findings.md"

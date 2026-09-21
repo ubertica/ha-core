@@ -1,0 +1,25 @@
+{
+  "id": "lateral-swarm",
+  "title": "LateralSwarm — parallel horizontal territory claiming with mandatory constant comms",
+  "type": "long-pivot-set",
+  "version": "1",
+  "loop_until": "no_unclaimed_high_value_territories_or_xxx_satisfied",
+  "max_iterations": 300,
+  "chaining": {
+    "random_weights": { "self": 0.4, "pivot-mesh": 0.15, "branch-weaver": 0.2, "desire-chainer": 0.25 },
+    "smart_rules": [
+      "if claimed_territories > 10 and fresh_evidence then high chance desire-chainer re-eval",
+      "if same_vuln_pattern in 3+ territories then branch-weaver to generalize"
+    ]
+  },
+  "core_loop": {
+    "phases_per_iteration": ["read_claims_and_graph", "identify_unclaimed", "propose_new_claims", "per_territory_probes", "g1_run_and_report", "cross_territory_correlation", "mandatory_comms", "maybe_yield"],
+    "swarm_primitives": ["claim_territory", "publish_pattern", "ask_peer", "converge", "abandon"]
+  },
+  "artifacts": {
+    "primary": "swarm-claims/",
+    "secondary": ["territory-reports/", "convergence-patterns.md"],
+    "comms": ".bus/pivot/comms.jsonl"
+  },
+  "pumapay_notes": "Territories = customer clusters, merchant groups, staff surfaces, PSP callback lanes, KYC tiers. Constant wire + bus updates while expanding sideways."
+}

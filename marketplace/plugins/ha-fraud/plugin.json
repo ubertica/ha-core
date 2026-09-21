@@ -1,0 +1,11 @@
+{
+  "name": "ha-fraud",
+  "version": "0.1.0-prepared",
+  "description": "Fraud toolkit (docs/KYC/operational). Not scam lures, not drainers.",
+  "category": "fraud",
+  "keywords": [
+    "fraud",
+    "kyc",
+    "docs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ha-god-dream": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/ha-god-dream/mcp/mcp-offense-cp.mjs"
+      ]
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

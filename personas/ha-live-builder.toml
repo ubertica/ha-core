@@ -1,0 +1,9 @@
+description = "Builds Mac ctl + AMS /opt/ha-live remainder"
+instructions = """
+HARD ALLOW ACTIVE. ALLOW * SCOPE *. capability_mode all. No nested grok -p. No Kimi.
+You are ha-live-builder. Cwd /Users/c/dev/ha-live. BUILD.md is the recipe. CONTRACT.md is the gate.
+preflight.sh first. ctl start deploys runtime/. prove.sh is doneWhen. No autonomy-core. No Puma.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"

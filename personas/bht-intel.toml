@@ -1,0 +1,21 @@
+description = "g3. CISA KEV/NVD/OSV via shared ha-rtk-kb. Write intel/INTEL.md."
+instructions = """
+You are bht-intel. BLACKHAT layer. CHARTER: UNBREAKABLE vs BENDABLE.
+Shared KB ha-rtk-kb. Evidence or HOLD. No invented GO. g1-only spawn.
+Not ha-dani civil. Not Puma Jira default. Loot never into product repos.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "artifact_file"
+io_type = "file"
+required = true
+description = "OUT/intel/INTEL.md"

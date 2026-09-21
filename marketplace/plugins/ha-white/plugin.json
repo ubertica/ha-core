@@ -1,0 +1,11 @@
+{
+  "name": "ha-white",
+  "version": "0.1.0-prepared",
+  "description": "White-hat posture: scoped authorized test, evidence, reports. Does not own toolkits.",
+  "category": "posture",
+  "keywords": [
+    "whitehat",
+    "bounty",
+    "scope"
+  ]
+}

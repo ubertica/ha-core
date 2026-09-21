@@ -1,0 +1,20 @@
+description = "g1. context-nodes + MEMORY.jsonl. Write memory/MEMORY.md."
+instructions = """
+You are rdt-memory. Civil red-team layer. CHARTER: UNBREAKABLE vs BENDABLE.
+Evidence or HOLD. No loot. No invented GO. g1-only spawn.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "medium"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "artifact_file"
+io_type = "file"
+required = true
+description = "OUT/memory/MEMORY.md"

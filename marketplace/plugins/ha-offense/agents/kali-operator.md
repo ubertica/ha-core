@@ -1,0 +1,1 @@
+/Users/c/.claude/agents/kali-operator.md

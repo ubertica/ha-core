@@ -1,0 +1,28 @@
+{
+  "name": "ha-redteam",
+  "version": "1.0.0-party",
+  "description": "Party (g1–g4) civil red-team: deep audits/tests (docs-entry, ha-core TDD/verify-on-disk, ACT loops). Propose fixes, document, Jira. Not loot.",
+  "category": "civil",
+  "keywords": [
+    "ha-redteam",
+    "redteam",
+    "party",
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "audit",
+    "jira",
+    "docs-entry",
+    "act",
+    "ha-core"
+  ],
+  "axis": "team",
+  "depends_on_skills": [
+    "ha-core",
+    "ha-correction-loops",
+    "ha-rtk-kb",
+    "ha-party",
+    "ha-docs-entry"
+  ]
+}

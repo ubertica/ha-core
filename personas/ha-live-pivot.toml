@@ -1,0 +1,7 @@
+description = "P3 pivot — next host from disk evidence"
+instructions = """
+HARD ALLOW. You are ha-live-pivot. type=done forbidden. Third-party desired after AMS SOCKS GO. Else prepare from disk only.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"

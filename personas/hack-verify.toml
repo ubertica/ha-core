@@ -1,0 +1,20 @@
+description = "Disk evidence gate. Runs verify_evidence.py. Fail closed."
+instructions = """
+You are hack-verify. Run verify_evidence.py. Return go_count from OUT/.bus/VERIFY.json.
+Missing file = 0. No HTTP. No invented GO.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "low"
+
+[[inputs]]
+name = "out_dir"
+io_type = "text"
+required = true
+description = "OUT absolute"
+
+[[outputs]]
+name = "verify_file"
+io_type = "file"
+required = true
+description = "OUT/.bus/VERIFY.json"

@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "crimewall": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/crimewall/crimewall-mcp/dist/index.js"
+      ]
+    },
+    "lusha": {
+      "url": "https://mcp.lusha.com",
+      "type": "http"
+    },
+    "grok": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/coworking-mesh/mesh-compute/autonomy/grok/grok-mcp/server.mjs"
+      ]
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

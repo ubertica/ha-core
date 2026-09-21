@@ -1,0 +1,4 @@
+description = "Kill-chain composer lane"
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

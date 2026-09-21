@@ -1,0 +1,131 @@
+{
+  "id": "docs-entry-x",
+  "title": "OpenAPI-as-entry, extreme: unauth ops + unsigned webhooks + party refute. Not the short docs-entry pair.",
+  "groups": ["preflight", "spec", "unauth", "webhook", "adversary", "weapon"],
+  "fallback": { "g3": "g4" },
+  "verify_after": ["w09-red-on-red"],
+  "weapon_requires_go": true,
+  "waves": [
+    {
+      "id": "w00-preflight",
+      "group": "preflight",
+      "title": "HA + SOCKS. JWT not required.",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/PLAN.json",
+      "ready": "w00-preflight"
+    },
+    {
+      "id": "w01-fetch-spec",
+      "group": "spec",
+      "title": "g1 GET /docs /swagger /openapi.json /redoc. Save spec.",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "docs-entry/spec.json",
+      "ready": "w01-fetch-spec"
+    },
+    {
+      "id": "w02-bucket",
+      "group": "spec",
+      "title": "Brains bucket ops: public, auth-entry, money, webhook, upload, admin",
+      "seats": ["g2", "g3"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": false,
+      "artifact": "docs-entry/buckets.md",
+      "ready": "w02-bucket"
+    },
+    {
+      "id": "w03-unauth-get",
+      "group": "unauth",
+      "title": "Unauth GET/HEAD/OPTIONS on every non-money path",
+      "seats": ["g2"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "docs-entry/unauth-findings.md",
+      "ready": "w03-unauth-get"
+    },
+    {
+      "id": "w04-auth-entry-empty-post",
+      "group": "unauth",
+      "title": "Empty POST on login/refresh/otp only. Dummy.",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "docs-entry/auth-entry-findings.md",
+      "ready": "w04-auth-entry-empty-post"
+    },
+    {
+      "id": "w05-webhook-unsigned",
+      "group": "webhook",
+      "title": "Unsigned POST, empty body, wrong HMAC, missing ts",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "docs-entry/webhook-findings.md",
+      "ready": "w05-webhook-unsigned"
+    },
+    {
+      "id": "w06-webhook-token-in-path",
+      "group": "webhook",
+      "title": "Telegram/bot/payment IPN token-in-path, duplicate event-id",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "docs-entry/webhook-token-findings.md",
+      "ready": "w06-webhook-token-in-path"
+    },
+    {
+      "id": "w07-upload-parser",
+      "group": "webhook",
+      "title": "Spec upload routes → parser class hyps",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "docs-entry/upload-findings.md",
+      "ready": "w07-upload-parser"
+    },
+    {
+      "id": "w08-money-hold",
+      "group": "adversary",
+      "title": "List money ops. Do not POST. HOLD unless allow_money_write.",
+      "seats": ["g4"],
+      "mode": "parallel",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "docs-entry/money-hold.md",
+      "ready": "w08-money-hold"
+    },
+    {
+      "id": "w09-red-on-red",
+      "group": "adversary",
+      "title": "Kill health/public-ok; keep real unauth/webhook GOs",
+      "seats": ["g2", "g3", "g4"],
+      "mode": "round",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "docs-entry/red-on-red.md",
+      "ready": "w09-red-on-red"
+    },
+    {
+      "id": "w10-verify-lead",
+      "group": "weapon",
+      "title": "verify_evidence pack isolation + FINDINGS",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": "FINDINGS.md",
+      "ready": "w10-verify-lead"
+    }
+  ]
+}

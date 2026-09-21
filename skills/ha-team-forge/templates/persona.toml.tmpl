@@ -1,0 +1,26 @@
+description = "{{ROLE}}"
+instructions = """
+You are {{PREFIX}}-{{LANE}}. Team {{NAME}}. Follow CONTRACT. Evidence or HOLD.
+Write OUT/{{ARTIFACT}}. Touch OUT/.bus/READY.{{LANE}}. No nested spawn.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "artifact_file"
+io_type = "file"
+required = true
+description = "OUT/{{ARTIFACT}}"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.{{LANE}}"

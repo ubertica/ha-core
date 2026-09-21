@@ -1,0 +1,16 @@
+# User agents (`~/.grok/agents/`)
+
+Grok loads `name:` from these `.md` files as `spawn_subagent` types.
+
+## {{NAME}} team
+
+Skill: `/{{NAME}}`
+
+| Type | Lane |
+|------|------|
+{{LANE_TABLE}}
+
+Conductor: references/AUTONOMY.md. Parent launches the workflow; do not pick lanes by hand.
+
+Wiring: skill `/{{NAME}}`, workflow `{{NAME}}`, contract in the skill `references/CONTRACT.md`.
+Children inherit all parent MCP/tools. They talk via `OUT/.bus/` + parent (no nested spawn).

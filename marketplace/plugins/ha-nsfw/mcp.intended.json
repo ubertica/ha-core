@@ -1,0 +1,4 @@
+{
+  "mcpServers": {},
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

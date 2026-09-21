@@ -1,0 +1,10 @@
+[
+  {"id": "rails", "role": "Cashin/cashout rail catalog and state machines.", "artifact": "payments/RAILS.md", "ready": "rails"},
+  {"id": "psp", "role": "PSP adapters, credentials vault refs, sandbox matrix.", "artifact": "payments/PSP.md", "ready": "psp"},
+  {"id": "webhooks", "role": "Signed webhooks, idempotency, retry/DLQ.", "artifact": "payments/WEBHOOKS.md", "ready": "webhooks"},
+  {"id": "qa", "role": "Payment QA gates; no money-write without flag.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "test", "role": "Payment e2e/sandbox reports.", "artifact": "test/TEST-REPORT.md", "ready": "test"},
+  {"id": "dev", "role": "Implement payment code; CHANGES.md", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Collab ledger/risk/support via bus.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for payments.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

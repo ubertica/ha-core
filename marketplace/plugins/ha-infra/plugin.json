@@ -1,0 +1,12 @@
+{
+  "name": "ha-infra",
+  "version": "0.1.0-prepared",
+  "description": "Infra / ops / comms. C2 lives here unless ha-c2 is split out.",
+  "category": "infra",
+  "keywords": [
+    "infra",
+    "c2",
+    "telegram",
+    "pm2"
+  ]
+}

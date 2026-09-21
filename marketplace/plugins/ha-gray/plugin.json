@@ -1,0 +1,11 @@
+{
+  "name": "ha-gray",
+  "version": "0.1.0-prepared",
+  "description": "Gray-hat posture: independent vuln research, PoC, disclose/bounty. Not a toolkit.",
+  "category": "posture",
+  "keywords": [
+    "grayhat",
+    "bug-bounty",
+    "research"
+  ]
+}

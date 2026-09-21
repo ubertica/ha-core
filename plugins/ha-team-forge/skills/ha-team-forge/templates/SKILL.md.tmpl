@@ -1,0 +1,31 @@
+---
+name: {{NAME}}
+description: >
+  {{PURPOSE}} Use when creating a new team, forging a plugin+agents pack, /{{NAME}}, or "como ha-hackers pero para {{NAME}}".
+---
+
+# {{NAME}}
+
+Canonical references: `references/{NORTHSTAR,CONTRACT,AUTONOMY}.md`  
+Gold: `~/.grok/plugins/ha-hackers/`  
+Build checklist: `BUILD-SPEC.md`
+
+## Quick use
+
+```bash
+bash ~/.grok/skills/{{NAME}}/scripts/ctl.sh forge \
+  --name {{NAME}} --prefix {{PREFIX}} --mode team --tick {{TICK}} \
+  --purpose "{{PURPOSE}}" \
+  --lanes ~/.grok/skills/ha-team-forge/examples/lanes-{{SHORT}}.json
+```
+
+Or workflow: `/{{NAME}}` / `workflow name=ha-team-forge` with args.
+
+## Modes
+
+`team` (default) · `plugin` · `agents` · `tick`
+
+## Conductor rule
+
+Parent writes/approves brief → forge scripts render templates → `selftest` → DONE.  
+Volume file gen may use `grok-build` workers; design stays on grok-4.6.

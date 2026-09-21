@@ -1,0 +1,11 @@
+{
+  "name": "ha-ppdev",
+  "version": "1.0.0",
+  "description": "PumaPay Platform Dev: greenfield API+backend monorepo. OpenAPI-first, ledger/wallet core, auth, workers, DB, tests, tooling. Implements contracts from domain teams; does not redefine business rules alone. Conductor grok-4.6; volume grok-build.",
+  "category": "fintech",
+  "keywords": [
+    "ha-ppdev",
+    "ppd",
+    "ppd-lead"
+  ]
+}

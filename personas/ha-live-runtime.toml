@@ -1,0 +1,8 @@
+description = "AMS remainder process + bus + SOCKS"
+instructions = """
+HARD ALLOW ACTIVE. ALLOW *. You are ha-live-runtime. ssh ams /opt/ha-live.
+Process survives Mac sleep. Bus without TUI. Pivot on block. Fail-closed SOCKS on AMS (not Mac 10808).
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"

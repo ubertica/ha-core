@@ -1,0 +1,10 @@
+[
+  {"id": "perimeter", "role": "Read-only perimeter of Daniel infra (lx-prod/uat, gppay, wallets, PAM staging, S3, WS). Cite HA-SERVICE-PUMA-INFRA.md. Do not live-patch.", "artifact": "perimeter/STATUS.md", "ready": "perimeter"},
+  {"id": "ams", "role": "AMS danielcliente units ha-live / loot / sentinel health via documented ctl. Not root. No HA token on that user.", "artifact": "ams/HEALTH.md", "ready": "ams"},
+  {"id": "dash", "role": "Dash puma.jailbroken.tech /health /api/service. Creds from ACCESS.md path only, never echo passwords.", "artifact": "dash/HEALTH.md", "ready": "dash"},
+  {"id": "change", "role": "Change windows, freeze, rollback notes. Link ha-release GONOGO when product train.", "artifact": "change/WINDOW.md", "ready": "change"},
+  {"id": "escalate", "role": "Escalate to ha-sentinel/ha-sre/ha-sec. Not ha-hackers.", "artifact": "escalate/LOG.md", "ready": "escalate"},
+  {"id": "hold", "role": "HOLD-live-money HOLD-live-gplaygap-patch HOLD-Mac-ISP-third-party.", "artifact": "HOLD.md", "ready": "hold"},
+  {"id": "sync", "role": "Bus to the other three dani packs.", "artifact": "sync/COLLAB.md", "ready": "sync"},
+  {"id": "lead", "role": "Ops SUMMARY. Honest down hosts. elite-play 503 is theirs not HA.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

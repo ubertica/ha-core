@@ -1,0 +1,31 @@
+# never client overlay / secrets
+.env
+.env.*
+*.env
+active.env
+auth.json
+*.pem
+*.key
+*.pass
+id_rsa
+id_ed25519
+*.sock
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+secrets/
+grants/
+sessions/
+logs/
+tmp/
+downloads/
+loot/
+proof/
+.bus/
+HA-ReadOnly/
+
+# marketplace harvest, not core
+marketplace/data/

@@ -1,0 +1,11 @@
+{
+  "name": "ha-osint",
+  "version": "0.1.0-prepared",
+  "description": "OSINT gateway: crimewall, lusha, grok search MCP.",
+  "category": "intel",
+  "keywords": [
+    "osint",
+    "crimewall",
+    "lusha"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ha-pragmatic",
+  "version": "1.0.0",
+  "description": "iGaming team specialized in Pragmatic Play Integration API v3.233 (July 2025 PDF): Seamless Wallet vs Balance Transfer, CasinoGameAPI, MD5 hash, Free Spins/Chips, history/datafeeds, PP Live BO. Spec-first. Staging default. IP whitelist. Never invent GO. No live money without operator flag.",
+  "category": "igaming",
+  "keywords": [
+    "ha-pragmatic",
+    "pra",
+    "pra-lead"
+  ]
+}

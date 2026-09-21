@@ -1,0 +1,11 @@
+{
+  "name": "ha-black",
+  "version": "0.1.0-prepared",
+  "description": "Black-hat posture: full adversary emulation. Turns on toolkits; is not ha-offense.",
+  "category": "posture",
+  "keywords": [
+    "blackhat",
+    "adversary",
+    "kill-chain"
+  ]
+}

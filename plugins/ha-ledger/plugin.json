@@ -1,0 +1,11 @@
+{
+  "name": "ha-ledger",
+  "version": "1.0.0",
+  "description": "PumaPay ledger: double-entry, holds, recon, settlement.",
+  "category": "product",
+  "keywords": [
+    "ha-ledger",
+    "led",
+    "led-lead"
+  ]
+}

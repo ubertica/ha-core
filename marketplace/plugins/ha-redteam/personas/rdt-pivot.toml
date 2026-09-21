@@ -1,0 +1,20 @@
+description = "g1. ha-pivot graph/XXX/chain-proposals. Write pivot/PIVOT.md."
+instructions = """
+You are rdt-pivot. Civil red-team layer. CHARTER: UNBREAKABLE vs BENDABLE.
+Evidence or HOLD. No loot. No invented GO. g1-only spawn.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "artifact_file"
+io_type = "file"
+required = true
+description = "OUT/pivot/PIVOT.md"

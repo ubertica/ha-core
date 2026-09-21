@@ -1,0 +1,62 @@
+[
+  {
+    "id": "arch",
+    "role": "Stack ADRs, bounded contexts, monorepo layout. Greenfield PumaPay API+backend — no legacy reuse without explicit import.",
+    "artifact": "platform/ARCHITECTURE.md",
+    "ready": "arch"
+  },
+  {
+    "id": "api",
+    "role": "OpenAPI-first contracts, versioning, error envelope, idempotency keys. Owns api/openapi.yaml.",
+    "artifact": "api/openapi.yaml",
+    "ready": "api"
+  },
+  {
+    "id": "backend",
+    "role": "HTTP services, handlers, domain wiring. Implements contracts from api + domain teams (ledger/payments/risk/kyc).",
+    "artifact": "dev/CHANGES.md",
+    "ready": "backend"
+  },
+  {
+    "id": "db",
+    "role": "Schema, migrations, ledger/wallet tables, outbox. No destructive migrate without flag.",
+    "artifact": "db/SCHEMA.md",
+    "ready": "db"
+  },
+  {
+    "id": "auth",
+    "role": "Identity, sessions/JWT, scopes, device binding notes. Secrets redacted in chat.",
+    "artifact": "auth/AUTH.md",
+    "ready": "auth"
+  },
+  {
+    "id": "workers",
+    "role": "Background jobs, webhook ingest, transactional outbox, retries/DLQ.",
+    "artifact": "workers/JOBS.md",
+    "ready": "workers"
+  },
+  {
+    "id": "test",
+    "role": "Contract tests, integration fixtures, money-path sandboxes. Evidence in TEST-REPORT.",
+    "artifact": "test/TEST-REPORT.md",
+    "ready": "test"
+  },
+  {
+    "id": "tooling",
+    "role": "docker-compose, Makefile, local CI, seed scripts. Devex for the monorepo.",
+    "artifact": "tooling/DEVENV.md",
+    "ready": "tooling"
+  },
+  {
+    "id": "sync",
+    "role": "Bus collab with ha-ledger/payments/risk/kyc/sre/sec/release/pumapay. Append-only JSONL.",
+    "artifact": "sync/COLLAB-STATUS.md",
+    "ready": "sync"
+  },
+  {
+    "id": "lead",
+    "role": "SUMMARY + BOARD + PR order. No invented GO. Money-writes gated.",
+    "artifact": "SUMMARY.md",
+    "ready": "lead"
+  }
+]

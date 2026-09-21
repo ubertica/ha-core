@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "android-emulator": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/android-emulator-control/mcp.mjs"
+      ]
+    },
+    "utm-windows": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/utm-windows-control/mcp.mjs"
+      ]
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

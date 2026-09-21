@@ -1,0 +1,1 @@
+/Users/c/.claude/agents/mode-white-hat.md

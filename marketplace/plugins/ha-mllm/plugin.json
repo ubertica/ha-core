@@ -1,0 +1,12 @@
+{
+  "name": "ha-mllm",
+  "version": "0.1.0-prepared",
+  "description": "Multi-LLM router: ha-mllm skill + multi-llm/expressai/kimi MCP.",
+  "category": "agentic",
+  "keywords": [
+    "multi-llm",
+    "expressai",
+    "kimi",
+    "router"
+  ]
+}

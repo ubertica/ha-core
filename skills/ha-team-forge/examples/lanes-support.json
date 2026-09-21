@@ -1,0 +1,9 @@
+[
+  {"id": "triage", "role": "SDPPAY triage macros, intents, routing.", "artifact": "support/TRIAGE.md", "ready": "triage"},
+  {"id": "macros", "role": "Reply templates; no secrets; escalate rules.", "artifact": "support/MACROS.md", "ready": "macros"},
+  {"id": "queue", "role": "Ticket queue SLAs mapped to SDPPAY.", "artifact": "support/QUEUE.md", "ready": "queue"},
+  {"id": "qa", "role": "Support quality gates / CSAT samples.", "artifact": "qa/GATES.md", "ready": "qa"},
+  {"id": "dev", "role": "Bot/automation code changes.", "artifact": "dev/CHANGES.md", "ready": "dev"},
+  {"id": "sync", "role": "Escalate to risk/kyc/payments via bus.", "artifact": "sync/COLLAB-STATUS.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for support.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

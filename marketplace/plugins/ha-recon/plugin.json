@@ -1,0 +1,12 @@
+{
+  "name": "ha-recon",
+  "version": "0.1.0-prepared",
+  "description": "Recon / hunter / kali / pentest agents. Exploit lib lives here.",
+  "category": "offense",
+  "keywords": [
+    "recon",
+    "kali",
+    "hunter",
+    "pentest"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "ha-nsfw",
+  "version": "0.1.0-prepared",
+  "description": "NSFW 18+ multimedia (Imagine). Pointer to grant; no extra MCP.",
+  "category": "media",
+  "keywords": [
+    "nsfw",
+    "imagine"
+  ]
+}

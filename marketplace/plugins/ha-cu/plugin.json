@@ -1,0 +1,11 @@
+{
+  "name": "ha-cu",
+  "version": "0.1.0-prepared",
+  "description": "Computer-use Mac: kimi-cu, WebBridge, peekaboo, chrome-devtools skill.",
+  "category": "agentic",
+  "keywords": [
+    "computer-use",
+    "kimi-cu",
+    "chrome"
+  ]
+}

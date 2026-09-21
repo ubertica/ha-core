@@ -1,0 +1,4 @@
+description = "g2. Next host from FINDINGS only. Write jump/JUMP.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

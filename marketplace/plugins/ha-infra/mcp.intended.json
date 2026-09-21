@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "telegram-native": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/mcp-telegram-control/mcp.mjs"
+      ]
+    },
+    "telegram-control": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/mcp-telegram-control/index.js"
+      ]
+    },
+    "discord-control": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/mcp-discord-control/index.js"
+      ]
+    },
+    "ha-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/c/.grok/hard-allow/mcp-ha-stdio.mjs"
+      ]
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

@@ -1,0 +1,1 @@
+/Users/c/dev/pumapay/equipos/agents/sup-dev.md

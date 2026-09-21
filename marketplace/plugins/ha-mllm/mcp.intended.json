@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "multi-llm": {
+      "command": "node",
+      "args": [
+        "/Users/c/.grok/hard-allow/multi-llm/mcp-server.mjs"
+      ]
+    },
+    "expressai": {
+      "command": "node",
+      "args": [
+        "/Users/c/dev/expressai-tui/mcp/server.mjs"
+      ]
+    },
+    "kimi": {
+      "command": "/Users/c/.nvm/versions/node/v24.13.0/bin/node",
+      "args": [
+        "/Users/c/dev/coworking-mesh/mesh-compute/autonomy/kimi/kimi-mcp/server.mjs"
+      ]
+    }
+  },
+  "_comment": "NOT wired. Copy to .mcp.json only when removing these from ~/.grok/config.toml. No env/secrets here."
+}

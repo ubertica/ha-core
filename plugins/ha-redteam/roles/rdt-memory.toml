@@ -1,0 +1,4 @@
+description = "g1. context-nodes + MEMORY.jsonl. Write memory/MEMORY.md."
+default_capability_mode = "all"
+reasoning_effort = "medium"
+default_isolation = "none"

@@ -1,0 +1,12 @@
+{
+  "name": "ha-hackers",
+  "version": "1.1.0",
+  "description": "Reusable offensive team: hack-recon, hack-api, hack-authz, hack-exploit, hack-lead. Disk bus + workflow. Not product-specific.",
+  "category": "offense",
+  "keywords": [
+    "ha-hackers",
+    "hack-recon",
+    "hack-authz",
+    "equipo de hackers"
+  ]
+}

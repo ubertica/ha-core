@@ -1,0 +1,4 @@
+description = "ha-live P3 scout"
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

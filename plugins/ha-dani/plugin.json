@@ -1,0 +1,13 @@
+{
+  "name": "ha-dani",
+  "version": "1.1.0",
+  "description": "Civil conductor for Daniel / Puma post-incidente. Routes audit/authz/handoff/ops. Not ha-hackers.",
+  "category": "civil",
+  "keywords": [
+    "ha-dani",
+    "daniel",
+    "civil",
+    "puma",
+    "reunion"
+  ]
+}

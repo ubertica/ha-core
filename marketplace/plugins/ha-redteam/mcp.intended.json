@@ -1,0 +1,4 @@
+{
+  "mcpServers": {},
+  "_comment": "NOT wired. Party uses grok-party already in ~/.grok/config.toml. No env/secrets here."
+}

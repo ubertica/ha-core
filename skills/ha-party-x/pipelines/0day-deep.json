@@ -1,0 +1,153 @@
+{
+  "id": "0day-deep",
+  "title": "HF-bar 0day-class hunter. Skip recon if READY.surface exists.",
+  "groups": ["preflight", "reuse", "classes", "adversary", "weapon"],
+  "fallback": { "g3": "g4" },
+  "verify_after": ["w09-refute-all"],
+  "weapon_requires_go": true,
+  "waves": [
+    {
+      "id": "w00-preflight",
+      "group": "preflight",
+      "title": "HA + SOCKS + seats",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/PLAN.json",
+      "ready": "w00-preflight"
+    },
+    {
+      "id": "w01-reuse-or-surface",
+      "group": "reuse",
+      "title": "Read recon/api-map; if missing, one surface design+exec block",
+      "seats": ["g2"],
+      "mode": "parallel",
+      "playbook": "g2-surface",
+      "exec": true,
+      "artifact": "api-map.md",
+      "ready": "w01-reuse-or-surface"
+    },
+    {
+      "id": "w02-class-ssrf",
+      "group": "classes",
+      "title": "SSRF class: fetch/webhook/renderer/redir/IPv6/gopher",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/ssrf.md",
+      "ready": "w02-class-ssrf"
+    },
+    {
+      "id": "w03-class-ssti",
+      "group": "classes",
+      "title": "SSTI/template/view engines",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/ssti.md",
+      "ready": "w03-class-ssti"
+    },
+    {
+      "id": "w04-class-parser",
+      "group": "classes",
+      "title": "File parsers: upload/zip/xml/yaml/hdf5-class/image",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/parser.md",
+      "ready": "w04-class-parser"
+    },
+    {
+      "id": "w05-class-proto",
+      "group": "classes",
+      "title": "Prototype pollution + merge gadgets + qs/Fastify",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/proto.md",
+      "ready": "w05-class-proto"
+    },
+    {
+      "id": "w06-class-deser",
+      "group": "classes",
+      "title": "Deser/signed cookie/JWT kid/jku/alg",
+      "seats": ["g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/deser.md",
+      "ready": "w06-class-deser"
+    },
+    {
+      "id": "w07-class-graphql-amp",
+      "group": "classes",
+      "title": "GraphQL alias/batch/subscription/persisted-query authz skip",
+      "seats": ["g3", "g2"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/graphql.md",
+      "ready": "w07-class-graphql-amp"
+    },
+    {
+      "id": "w08-class-runtime",
+      "group": "classes",
+      "title": "Debug/pprof/heap/.git/sourcemap/actuator",
+      "seats": ["g2", "g3"],
+      "mode": "parallel",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day/runtime.md",
+      "ready": "w08-class-runtime"
+    },
+    {
+      "id": "w09-refute-all",
+      "group": "adversary",
+      "title": "g4 kills every class claim; demand oracles",
+      "seats": ["g4"],
+      "mode": "parallel",
+      "playbook": "g4-adversary",
+      "exec": false,
+      "artifact": "0day-refute.md",
+      "ready": "w09-refute-all"
+    },
+    {
+      "id": "w10-verify",
+      "group": "adversary",
+      "title": "Disk GO fail-closed",
+      "seats": [],
+      "mode": "exec",
+      "playbook": "conductor",
+      "exec": true,
+      "artifact": ".bus/VERIFY.json",
+      "ready": "w10-verify"
+    },
+    {
+      "id": "w11-loop-dry",
+      "group": "adversary",
+      "title": "If new hyps survived refute, one more probe round; else workstream",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "0day-findings.md",
+      "ready": "w11-loop-dry"
+    },
+    {
+      "id": "w12-chain-lead",
+      "group": "weapon",
+      "title": "Chain + FINDINGS. requires_go for chain hops.",
+      "seats": ["g3", "g4"],
+      "mode": "round",
+      "playbook": "g3-weapon",
+      "exec": true,
+      "artifact": "FINDINGS.md",
+      "ready": "w12-chain-lead"
+    }
+  ]
+}

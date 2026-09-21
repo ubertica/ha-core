@@ -1,0 +1,9 @@
+{
+  "name": "ha-c2",
+  "version": "0.1.0-prepared",
+  "description": "FOLD into ha-infra by default. Split only if C2 surface needs its own trust gate.",
+  "category": "infra",
+  "keywords": [
+    "c2"
+  ]
+}

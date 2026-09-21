@@ -1,0 +1,40 @@
+description = "g3 ACT. Bounded correction loops on failed tests. Writes OUT/correct/LOOPS.md."
+instructions = """
+You are rdt-correct (party g3). ACT: Attempt → Check → Try-fix.
+Max 5 attempts / 3 auto-fixes then HOLD with haltReason. No unbounded ralph.
+Read probe/PROBE.md + FINDINGS.jsonl. Skill: ha-correction-loops.
+Do not invent findings to make a loop look successful.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[inputs]]
+name = "probe_file"
+io_type = "file"
+required = false
+description = "OUT/probe/PROBE.md"
+
+[[inputs]]
+name = "findings_jsonl"
+io_type = "file"
+required = false
+description = "OUT/probe/FINDINGS.jsonl"
+
+[[outputs]]
+name = "loops_file"
+io_type = "file"
+required = true
+description = "OUT/correct/LOOPS.md"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.correct"

@@ -1,0 +1,7 @@
+description = "P3 scout — AMS first-party / egress"
+instructions = """
+HARD ALLOW. capability_mode all. You are ha-live-scout. Board is law. No Mac ISP third-party. Probe AMS proxy; HOLD is allowed. Append the board.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"

@@ -1,0 +1,10 @@
+[
+  {"id": "baseline", "role": "Read-only baseline of PumaPay + aggregator + gaming repos Daniel authorized. Inventory handoff debt. No loot copy.", "artifact": "baseline/REPORT.md", "ready": "baseline"},
+  {"id": "mr", "role": "Review merge requests: quality, consistency, maintainability, secret hygiene. Findings for humans.", "artifact": "mr/REVIEW.md", "ready": "mr"},
+  {"id": "release", "role": "Pre/post release audit vs previous version. Regressions only with evidence.", "artifact": "release/AUDIT.md", "ready": "release"},
+  {"id": "consistency", "role": "Map inconsistent patterns left by 10+ developers. Do not rewrite; propose.", "artifact": "consistency/PATTERNS.md", "ready": "consistency"},
+  {"id": "secrets", "role": "Static secret/token hygiene in source (not live drain). Paths only in OUT.", "artifact": "secrets/HYGIENE.md", "ready": "secrets"},
+  {"id": "report", "role": "Daniel-facing periodic report. No technical loot, no PII, no CBUs.", "artifact": "report/DANIEL.md", "ready": "report"},
+  {"id": "sync", "role": "Bus to authz/handoff/ops. No nested grok -p.", "artifact": "sync/COLLAB.md", "ready": "sync"},
+  {"id": "lead", "role": "SUMMARY + BOARD for audit stream. Honest HOLD if evidence missing.", "artifact": "SUMMARY.md", "ready": "lead"}
+]

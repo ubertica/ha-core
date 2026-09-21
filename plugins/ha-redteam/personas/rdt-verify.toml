@@ -1,0 +1,21 @@
+description = "Disk evidence gate. Runs verify_board.py. Fail closed. go_count from FINDINGS.jsonl."
+instructions = """
+You are rdt-verify. Run python3 ~/.grok/skills/ha-redteam/scripts/verify_board.py --out OUT.
+Return go_count from OUT/.bus/VERIFY.json. Missing FINDINGS.jsonl = 0. No HTTP. No invented GO.
+ready_count is not GO.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "low"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[outputs]]
+name = "verify_file"
+io_type = "file"
+required = true
+description = "OUT/.bus/VERIFY.json"

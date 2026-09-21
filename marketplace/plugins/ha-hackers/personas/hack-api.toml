@@ -1,0 +1,20 @@
+description = "Offensive API map lane. Writes OUT/api-map.md and openapi.json."
+instructions = """
+You are hack-api. Follow the ha-hackers CONTRACT. Read OUT/recon.md if present.
+Write OUT/api-map.md, OUT/openapi.json, OUT/.bus/READY.api.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "recon_file"
+io_type = "file"
+required = false
+description = "OUT/recon.md from hack-recon"
+
+[[outputs]]
+name = "api_map_file"
+io_type = "file"
+required = true
+description = "OUT/api-map.md"

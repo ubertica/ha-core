@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""Wrapper → shared ha-rtk-kb."""
+from __future__ import annotations
+
+import subprocess
+import sys
+from pathlib import Path
+
+KB = Path.home() / ".grok" / "skills" / "ha-rtk-kb" / "scripts" / "kb.py"
+sys.exit(subprocess.call([sys.executable, str(KB), "intel", "--pack", "ha-blackhat", *sys.argv[1:]]))

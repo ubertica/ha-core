@@ -1,0 +1,13 @@
+{
+  "name": "ha-upgrade-v1",
+  "version": "1.0.0",
+  "description": "HA upgrade v1: frozen /learn apply pack (0 actions). Install only when the operator says. Never mix Science marketplace.",
+  "category": "agentic",
+  "keywords": [
+    "ha-upgrade",
+    "v1",
+    "learn",
+    "upgrade plugin",
+    "version pack"
+  ]
+}

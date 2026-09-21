@@ -1,0 +1,16 @@
+{
+  "name": "ha-pumapay",
+  "version": "1.0.0",
+  "description": "PumaPay v2 product team: docs, PM/Jira, QA, testing, development, repo hygiene. Periodic ticks over infra + collab with ha-sentinel.",
+  "category": "product",
+  "keywords": [
+    "ha-pumapay",
+    "pumapay",
+    "pp-docs",
+    "pp-pm",
+    "pp-qa",
+    "pp-dev",
+    "project management",
+    "documentation"
+  ]
+}

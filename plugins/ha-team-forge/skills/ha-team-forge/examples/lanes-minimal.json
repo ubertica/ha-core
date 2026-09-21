@@ -1,0 +1,5 @@
+[
+  {"id": "lead", "role": "Team lead. Synthesize SUMMARY.md from all READY lanes.", "artifact": "SUMMARY.md", "ready": "lead"},
+  {"id": "recon", "role": "Map surface into recon.md", "artifact": "recon.md", "ready": "recon"},
+  {"id": "build", "role": "Implement changes; write CHANGES.md", "artifact": "CHANGES.md", "ready": "build"}
+]

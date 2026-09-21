@@ -1,0 +1,4 @@
+description = "g2 surface. OpenAPI-as-entry /docs unauth+webhook foothold. Dispatch docs-entry. Write entry/ENTRY.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

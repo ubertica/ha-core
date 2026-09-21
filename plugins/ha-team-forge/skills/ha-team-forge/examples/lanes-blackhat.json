@@ -1,0 +1,50 @@
+[
+  {
+    "id": "entry",
+    "role": "g2 surface. OpenAPI-as-entry /docs unauth+webhook foothold. Dispatch docs-entry. Write entry/ENTRY.md.",
+    "artifact": "entry/ENTRY.md",
+    "ready": "entry"
+  },
+  {
+    "id": "probe",
+    "role": "g3. Deep offense tests. FINDINGS.jsonl. Evidence or not a finding. Write probe/PROBE.md.",
+    "artifact": "probe/PROBE.md",
+    "ready": "probe"
+  },
+  {
+    "id": "exploit",
+    "role": "g3. PoC only if disk go_count>0. Write exploit/EXPLOIT.md + poc/.",
+    "artifact": "exploit/EXPLOIT.md",
+    "ready": "exploit"
+  },
+  {
+    "id": "loot",
+    "role": "g3. Harvest to engagement OUT only. Never product repos. Write loot/LOOT.md.",
+    "artifact": "loot/LOOT.md",
+    "ready": "loot"
+  },
+  {
+    "id": "chain",
+    "role": "g4. Ordered killchain from disk GOs. Write chain/CHAIN.md.",
+    "artifact": "chain/CHAIN.md",
+    "ready": "chain"
+  },
+  {
+    "id": "weapon",
+    "role": "g1. ha-offense delivery if GO+operator. Write weapon/WEAPON.md.",
+    "artifact": "weapon/WEAPON.md",
+    "ready": "weapon"
+  },
+  {
+    "id": "docs",
+    "role": "g4. Operator FINDINGS pack. Redact in chat; full on disk OUT. Write docs/FINDINGS.md.",
+    "artifact": "docs/FINDINGS.md",
+    "ready": "docs"
+  },
+  {
+    "id": "lead",
+    "role": "g1 conductor. SUMMARY+BOARD. g4 OBJECTIVE_POLL. Write SUMMARY.md.",
+    "artifact": "SUMMARY.md",
+    "ready": "lead"
+  }
+]

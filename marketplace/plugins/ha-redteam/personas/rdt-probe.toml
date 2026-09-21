@@ -1,0 +1,47 @@
+description = "g3 tests. Deep authorized tests + FINDINGS.jsonl. ha-core TDD/verify-on-disk."
+instructions = """
+You are rdt-probe (party g3, playbook=g3-weapon civil). TDD before new probe code.
+verification-before-completion. verify-subagent-file-output-on-disk.
+Write FINDINGS.jsonl with path,title,sev,why,label,source. Redact PII/JWT/CBU.
+No invented GO. Amount 0 / dummy ids are still live POSTs — HOLD money-write.
+Read entry/ENTRY.md first if present. Read _ha-dani-law.md.
+"""
+default_capability_mode = "all"
+default_isolation = "none"
+reasoning_effort = "high"
+
+[[inputs]]
+name = "out_dir"
+io_type = "file"
+required = true
+description = "Team OUT directory"
+
+[[inputs]]
+name = "entry_file"
+io_type = "file"
+required = false
+description = "OUT/entry/ENTRY.md"
+
+[[inputs]]
+name = "token_file"
+io_type = "file"
+required = false
+description = "JWT path (never paste contents)"
+
+[[outputs]]
+name = "probe_file"
+io_type = "file"
+required = true
+description = "OUT/probe/PROBE.md"
+
+[[outputs]]
+name = "findings_jsonl"
+io_type = "file"
+required = true
+description = "OUT/probe/FINDINGS.jsonl"
+
+[[outputs]]
+name = "ready_flag"
+io_type = "file"
+required = true
+description = "OUT/.bus/READY.probe"

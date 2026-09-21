@@ -1,0 +1,12 @@
+{
+  "name": "ha-crypto",
+  "version": "0.1.0-prepared",
+  "description": "On-chain / DeFi / EVM / solidity / MEV. Not the drainer product.",
+  "category": "crypto",
+  "keywords": [
+    "defi",
+    "evm",
+    "solidity",
+    "mev"
+  ]
+}

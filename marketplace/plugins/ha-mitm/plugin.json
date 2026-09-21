@@ -1,0 +1,11 @@
+{
+  "name": "ha-mitm",
+  "version": "0.1.0-prepared",
+  "description": "Traffic/MITM (Desktop/MCP chrome/firefox/system_mitm). Server :8940 was down at catalog time.",
+  "category": "labs",
+  "keywords": [
+    "mitm",
+    "traffic",
+    "burp"
+  ]
+}
