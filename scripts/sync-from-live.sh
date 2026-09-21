@@ -50,7 +50,7 @@ man = {
   "version": "0.1.0",
   "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
   "visibility": "private",
-  "wip": ["ha-blackhat"],
+  "wip": [],
   "skills": skills,
   "never": ["auth.json", "active.env", "grants", "secrets", "sessions", "loot", "HA-ReadOnly"],
 }

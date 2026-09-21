@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # ha-dani-authz conductor CLI. Never nested grok -p.
 set -euo pipefail
+if [[ -f "$HOME/.grok/context-nodes/DANI-PATHS.env" ]]; then
+  # shellcheck disable=SC1091
+  source "$HOME/.grok/context-nodes/DANI-PATHS.env"
+fi
 HERE="$(cd "$(dirname "$0")" && pwd)"
 cmd="${1:-status}"
 shift || true
@@ -59,7 +63,7 @@ case "$cmd" in
       esac
     done
     if [[ -z "$OUT" ]]; then
-      OUT="${HA_DANI_AUTHZ_OUT:-/Users/c/dev/dani/out/authz}"
+      OUT="${HA_DANI_AUTHZ_OUT:-$HOME/Library/CloudStorage/GoogleDrive-walterg2924@gmail.com/Mi unidad/dani/out/20-authz}"
     fi
     python3 "$HERE/dispatch.py" plan --out "$OUT" ${LANES:+--lanes "$LANES"}
     wf=$(python3 -c "
@@ -82,13 +86,13 @@ except Exception:
       esac
     done
     if [[ -z "$OUT" ]]; then
-      OUT="${HA_DANI_AUTHZ_OUT:-/Users/c/dev/dani/out/authz}"
+      OUT="${HA_DANI_AUTHZ_OUT:-$HOME/Library/CloudStorage/GoogleDrive-walterg2924@gmail.com/Mi unidad/dani/out/20-authz}"
     fi
     python3 "$HERE/dispatch.py" remainder --out "$OUT"
     echo "LAUNCH workflow name=ha-dani-authz-tick args.out=$OUT"
     ;;
   status)
-    OUT="${1:-${HA_DANI_AUTHZ_OUT:-/Users/c/dev/dani/out/authz}}"
+    OUT="${1:-${HA_DANI_AUTHZ_OUT:-$HOME/Library/CloudStorage/GoogleDrive-walterg2924@gmail.com/Mi unidad/dani/out/20-authz}}"
     python3 "$HERE/dispatch.py" status --out "$OUT" || true
     ;;
   from-hackers)

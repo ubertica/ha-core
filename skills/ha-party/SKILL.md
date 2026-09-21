@@ -27,9 +27,9 @@ Do **not** spawn 4 Groks. Seats stay MCP. Shared KB: `ha-rtk-kb`.
 | Dispatch | Status | Posture | g1 | g2 | g3 | g4 | OUT default |
 |----------|--------|---------|----|----|----|----|-------------|
 | `/ha-redteam` | **live** | civil audit/test + Jira (Daniel/Puma). Uses ha-core TDD/verify + ACT. **No loot.** | lead, docs-entry, jira | surface / OpenAPI | probe + ACT | adversary + FIXES | `/Users/c/dev/dani/out/redteam` |
-| `/ha-blackhat` | **WIP** — operator still forging. Do not dispatch as complete. | offense twin (same `ha-rtk-kb`). Not Puma Jira. | — | — | — | — | `/Users/c/dev/ha-live/proof/engagements/blackhat` |
+| `/ha-blackhat` | **live** | offense twin (same `ha-rtk-kb`). docs-entry foothold, exploit iff GO, loot/killchain. Not Puma Jira default. | lead, weapon, spawn | entry, jump | probe, exploit, loot, intel | chain, docs, OBJECTIVE_POLL | `/Users/c/dev/ha-live/proof/engagements/blackhat` |
 
-Tick live: `/ha-redteam-tick`. Accidental ha-hackers harvest on Daniel cwd → NACK, stay on ha-redteam.
+Ticks: `/ha-redteam-tick` · `/ha-blackhat-tick`. Accidental blackhat on Daniel cwd → NACK, route to ha-redteam. Accidental ha-hackers harvest on Daniel cwd → NACK, stay on ha-redteam.
 
 **Autonomous loop (applies when using party seats)**: 10s no human reply on any question → escalate the exact same question via wire/party_ask to the other seats (g2/g3/g4). They decide for the operator. Proceed with their TEAM_DECISION.
 **Stop only via g4**: g4 must poll @all "objective fulfilled with evidence?" and get unanimous YES from all seats. Any missing/NO = continue the loop (pivot, spawn, iterate) at full throttle until achieved.

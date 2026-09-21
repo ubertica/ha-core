@@ -44,6 +44,7 @@ def main() -> int:
             ),
             "jump": run("jump.py", extra),
             "intel": run("intel.py", extra + (["--proxy", args.proxy] if args.proxy else [])),
+            "ingest": run("ingest.py", extra),
         },
     }
     bus = Path(args.out).expanduser().resolve() / ".bus"

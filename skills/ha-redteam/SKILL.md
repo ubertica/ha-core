@@ -13,7 +13,7 @@ Personas: `~/.grok/personas/rdt-*.toml` · Roles: `~/.grok/roles/rdt-*.toml`
 Contract: `references/CONTRACT.md` · Autonomy: `references/AUTONOMY.md`  
 Civil law: `~/.grok/agents/_ha-dani-law.md`  
 Party: this TUI + MCP `grok-party` (`party_who` / `party_ask`). **No 4 TUIs.**  
-OUT default: `/Users/c/dev/dani/out/redteam`  
+OUT default: Drive `Mi unidad/dani/out/50-redteam` (Mac no es SoT)  
 **Shared KB with ha-blackhat:** `ha-rtk-kb` (`~/.grok/ha-rtk-kb/`, alias `~/.grok/hard-allow/kb/rtk`). Lanes separate; intel/memory/findings-index/learn are one. Civil never reads loot files — only the redacted index.
 
 Parent = conductor (g1). Children cannot spawn children. Nested `grok -p` banned.
@@ -42,7 +42,7 @@ Always-on: `ctl.sh layers --out OUT` (every auto/tick). Radio = `comms.jsonl` + 
 ## Dispatch
 
 ```bash
-export HA_REDTEAM_OUT=/Users/c/dev/dani/out/redteam
+source ~/.grok/context-nodes/DANI-PATHS.env   # HA_REDTEAM_OUT → Drive/dani/out/50-redteam
 bash ~/.grok/skills/ha-redteam/scripts/ctl.sh auto \
   --target "$TARGET" --out "$HA_REDTEAM_OUT" \
   --proxy "${HA_PROXY:-socks5h://127.0.0.1:10808}"

@@ -1,0 +1,4 @@
+description = "g2. NEXT-HOSTS.json from FINDINGS only. Write jump/JUMP.md."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

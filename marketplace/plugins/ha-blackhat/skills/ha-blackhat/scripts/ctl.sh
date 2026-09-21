@@ -20,11 +20,29 @@ case "$cmd" in
       esac
     done
     OUT="${OUT:-$DEFAULT_OUT}"
+    if [[ -z "${HA_BLACKHAT_JIRA:-}" ]]; then
+      echo "HOLD jira-sync: ha-blackhat is not Puma Jira default. Set HA_BLACKHAT_JIRA=1 to push. out=$OUT"
+      exit 0
+    fi
     if [[ -n "${HA_JIRA_DISABLE:-}" ]]; then
       echo "jira-sync skipped HA_JIRA_DISABLE=1 out=$OUT"
       exit 0
     fi
     exec python3 "$JIRA_SYNC" --out "$OUT" "${extra[@]+"${extra[@]}"}"
+    ;;
+  kb)
+    exec python3 "$HOME/.grok/skills/ha-rtk-kb/scripts/kb.py" "${1:-status}" --pack ha-blackhat "${@:2}"
+    ;;
+  ingest)
+    OUT="$DEFAULT_OUT"
+    extra=()
+    while [[ $# -gt 0 ]]; do
+      case "$1" in
+        --out) OUT="$2"; shift 2 ;;
+        *) extra+=("$1"); shift ;;
+      esac
+    done
+    exec python3 "$HERE/ingest.py" --out "$OUT" "${extra[@]+"${extra[@]}"}"
     ;;
   radio|jump|intel|memory|layers|charter)
     OUT="$DEFAULT_OUT"
@@ -60,22 +78,22 @@ case "$cmd" in
   selftest)
     echo "=== ha-blackhat selftest ==="
     ERR=0
-    for f in dispatch.py verify_board.py watch.sh radio.py jump.py intel.py memory.py layers.py charter.py spawn_child.py; do
+    for f in dispatch.py verify_board.py watch.sh radio.py jump.py intel.py memory.py ingest.py learn.py layers.py charter.py spawn_child.py; do
       if [[ -f "$HERE/$f" ]]; then
         echo "OK script: $f"
       else
         echo "MISSING: $f"; ERR=1
       fi
     done
-    [[ -f "$JIRA_SYNC" ]] && echo "OK jira_sync wrap: ha-hackers" || { echo "MISSING ha-hackers jira_sync.py"; ERR=1; }
-    [[ -f "$HOME/.grok/agents/_ha-dani-law.md" ]] && echo "OK civil law" || { echo "MISSING _ha-dani-law.md"; ERR=1; }
-    for a in bht-entry bht-probe bht-correct bht-fix bht-docs bht-jira bht-sync bht-lead bht-verify bht-jump bht-pivot bht-radio bht-intel bht-memory bht-spawn bht-learn; do
-      if [[ "$a" != "bht-verify" ]]; then
-        if [[ -f "$HOME/.grok/agents/${a}.md" ]]; then
-          echo "OK agent: $a"
-        else
-          echo "MISSING agent: $a"; ERR=1
-        fi
+    [[ -f "$HOME/.grok/agents/_ha-law.md" ]] && echo "OK _ha-law.md" || { echo "MISSING _ha-law.md"; ERR=1; }
+    [[ -f "$HOME/.grok/agents/_ha-dani-law.md" ]] && echo "NOTE dani-law present (civil pack only — do not load on blackhat)"
+    KB_PY="$HOME/.grok/skills/ha-rtk-kb/scripts/kb.py"
+    [[ -f "$KB_PY" ]] && echo "OK shared kb.py" || { echo "MISSING ha-rtk-kb kb.py"; ERR=1; }
+    for a in bht-entry bht-probe bht-exploit bht-loot bht-chain bht-weapon bht-docs bht-lead bht-jump bht-pivot bht-radio bht-intel bht-memory bht-spawn bht-learn bht-sync; do
+      if [[ -f "$HOME/.grok/agents/${a}.md" ]]; then
+        echo "OK agent: $a"
+      else
+        echo "MISSING agent: $a"; ERR=1
       fi
       if [[ -f "$HOME/.grok/personas/${a}.toml" ]]; then
         echo "OK persona: $a"
@@ -150,7 +168,7 @@ case "$cmd" in
     python3 "$HERE/dispatch.py" status --out "$OUT" || true
     ;;
   *)
-    echo "usage: ctl.sh auto|tick|status|plan|remainder|verify|jira-sync|watch|selftest|layers|radio|jump|intel|memory|spawn|charter --out DIR" >&2
+    echo "usage: ctl.sh auto|tick|status|plan|remainder|verify|jira-sync|watch|selftest|layers|radio|jump|intel|memory|ingest|kb|spawn|charter --out DIR" >&2
     exit 2
     ;;
 esac

@@ -1,8 +1,6 @@
 # ha-blackhat
 
-**WIP — operator still forging. Not party-ready. Do not dispatch as complete. Do not invent GO.**
-
-Party (g1–g4) **BLACKHAT** twin of `ha-redteam` (when finished). Same knowledge (`ha-rtk-kb`). Separate lanes/OUT.
+Party (g1–g4) **BLACKHAT** twin of `ha-redteam`. Same knowledge (`ha-rtk-kb`). Separate lanes/OUT.
 
 Canonical live copies:
 

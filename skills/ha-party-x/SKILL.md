@@ -56,7 +56,7 @@ Do not spawn `hack-recon`… unless the operator said `/ha-hackers`. This pack i
 | Skill | When |
 |-------|------|
 | `/ha-redteam` | **live** civil party: deep audit/test + Jira. No loot. Daniel/Puma default. |
-| `/ha-blackhat` | **WIP** — operator still forging. Do not dispatch as complete. Same `ha-rtk-kb` when ready. |
+| `/ha-blackhat` | **live** offense party twin: foothold → GO → loot/killchain. Same `ha-rtk-kb`. |
 | `ha-rtk-kb` | shared intel/memory/findings-index. Lanes stay separate. |
 
 `ha-party-x` pipelines stay the extreme wave set. Redteam/blackhat are the standing party *teams*. Do not mix OUT trees.

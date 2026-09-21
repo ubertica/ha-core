@@ -1,0 +1,4 @@
+description = "g1. g1-only children budget 8 depth 1. Write SPAWN_REQUEST."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

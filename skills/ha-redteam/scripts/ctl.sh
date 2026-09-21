@@ -3,7 +3,12 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 JIRA_SYNC="$HOME/.grok/skills/ha-hackers/scripts/jira_sync.py"
-DEFAULT_OUT="${HA_REDTEAM_OUT:-$HOME/dev/dani/out/redteam}"
+# SoT = Google Drive dani house (not the Mac).
+if [[ -f "$HOME/.grok/context-nodes/DANI-PATHS.env" ]]; then
+  # shellcheck disable=SC1091
+  source "$HOME/.grok/context-nodes/DANI-PATHS.env"
+fi
+DEFAULT_OUT="${HA_REDTEAM_OUT:-$HOME/Library/CloudStorage/GoogleDrive-walterg2924@gmail.com/Mi unidad/dani/out/50-redteam}"
 cmd="${1:-status}"
 shift || true
 case "$cmd" in

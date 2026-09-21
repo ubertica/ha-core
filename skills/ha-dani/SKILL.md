@@ -8,18 +8,27 @@ description: >
 
 # ha-dani (conductor)
 
-Read `~/.grok/agents/_ha-dani-law.md` and `/Users/c/dev/dani/DESIGN.md` first.
+Read `~/.grok/agents/_ha-dani-law.md` and Drive `dani/docs/DESIGN.md` first.
+
+**SoT = Google Drive** `walterg2924` → `Mi unidad/dani/` (not the Mac).
+Nodes tenant **`dani`** (alias `pumapay`) — aparte de `admin`/`root`. HA/admin pueden leer/escribir con `tenant=dani`.
+
+```bash
+source ~/.grok/context-nodes/DANI-PATHS.env
+python3 ~/.grok/context-nodes/bin/dani-drive.py put --lane redteam --rel probe/PROBE.md --body "..."
+python3 ~/.grok/context-nodes/bin/nodes-drive.py search --tenant dani --q "BOLA"
+```
 
 ## Route
 
-| Signal | Pack | OUT |
-|--------|------|-----|
-| MR, release, quality, deuda, informe para Daniel | `ha-dani-audit` | `/Users/c/dev/dani/out/audit` |
-| BOLA, F1–F12, CORS, /docs, owner filter, CLOSED | `ha-dani-authz` | `/Users/c/dev/dani/out/authz` |
-| 10+ devs, owners, huérfanos, unified-bucket, Staff OS | `ha-dani-handoff` | `/Users/c/dev/dani/out/handoff` |
-| AMS danielcliente, dash, perímetro, freeze | `ha-dani-ops` | `/Users/c/dev/dani/out/ops` |
-| Deep tests + proposed fixes + docs + Jira (party g1–g4) | `ha-redteam` | `/Users/c/dev/dani/out/redteam` |
-| Unclear / whole reunion | run **audit+handoff** first; authz/ops if incident/infra; redteam if TARGET+/docs | conductor `out/conductor` |
+| Signal | Pack | OUT (Drive) |
+|--------|------|-------------|
+| MR, release, quality, deuda, informe para Daniel | `ha-dani-audit` | `dani/out/10-audit` |
+| BOLA, F1–F12, CORS, /docs, owner filter, CLOSED | `ha-dani-authz` | `dani/out/20-authz` |
+| 10+ devs, owners, huérfanos, unified-bucket, Staff OS | `ha-dani-handoff` | `dani/out/30-handoff` |
+| AMS danielcliente, dash, perímetro, freeze | `ha-dani-ops` | `dani/out/40-ops` |
+| Deep tests + proposed fixes + docs + Jira (party g1–g4) | `ha-redteam` | `dani/out/50-redteam` |
+| Unclear / whole reunion | run **audit+handoff** first; authz/ops if incident/infra; redteam if TARGET+/docs | `dani/out/00-conductor` |
 
 Then `bash ~/.grok/skills/<pack>/scripts/ctl.sh status --out "$OUT"` and the pack workflow.
 

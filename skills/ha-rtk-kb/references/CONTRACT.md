@@ -19,6 +19,7 @@ Shared brain for `ha-redteam` (civil) and `ha-blackhat` (offense).
 - Fingerprint by SHA256-16 of the raw line (dedup).
 - Fail-open if a feed is down.
 - SOCKS AMS when hitting third-party HTTP (`HA_PROXY`).
+- Node bodies live on Drive (`walterg2924`). Mac keeps INDEX placeholders; expand via `nodes-drive.py`.
 
 ## MUST NOT
 

@@ -1,11 +1,17 @@
 # COLLAB — ha-blackhat
 
-Shared bus for cross-team collab (e.g. with ha-pumapay / ha-sentinel).
+Bus: `~/.grok/ha-blackhat-bus/` + per-run `OUT/.bus/`.
 
-Bus root: `~/.grok/ha-blackhat-bus/` or `~/.grok/ha-blackhat-bus/`
+| Peer | When |
+|------|------|
+| `ha-rtk-kb` | **shared** intel/memory/index/learn with ha-redteam |
+| `ha-redteam` | civil twin — do not mix loot into their OUT; they may read the index |
+| `ha-hackers` / `docs-entry` | specialist entry pack |
+| `ha-offense` | weapon after disk GO |
+| `ha-pivot` | graph / XXX / SPAWN_REQUEST |
+| `ha-hardallow` | Discord radio (gold/critical/pivot/killchain) |
+| `ha-context-nodes` | memory hydrate + commit_turn tags=`ha-rtk-kb,ha-blackhat` |
 
-Use `bus_append.py` or ctl `bus-append` to append JSONL notes.
-
-Lanes coordinate via OUT/.bus/READY.* inside per-run OUT, and shared bus for inter-team.
-
-See CONTRACT.md for bus wiring.
+Not ha-dani. Accidental Daniel cwd → NACK, route to ha-redteam.
+Puma Jira is **not** default (`HA_BLACKHAT_JIRA=1` required).
+Never truncate jsonl.

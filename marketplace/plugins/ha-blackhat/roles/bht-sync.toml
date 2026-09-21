@@ -1,0 +1,4 @@
+description = "g1. Bus to ha-hackers/ha-offense/ha-rtk-kb. NACK Daniel cwd."
+default_capability_mode = "all"
+reasoning_effort = "high"
+default_isolation = "none"

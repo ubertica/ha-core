@@ -21,7 +21,7 @@ Visibility: **private**. Do not `gh repo edit --visibility public`.
 - `marketplace/plugins/` + LAW/README
 - `scripts/`
 
-`ha-blackhat` is **WIP** — in the tree so pushes keep working; not a ready client dispatch.
+`ha-blackhat` is **live** (party g1–g4). Same `ha-rtk-kb` as ha-redteam. Separate OUT.
 
 ## Operator (you)
 

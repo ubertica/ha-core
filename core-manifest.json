@@ -2,11 +2,9 @@
   "name": "ha-core",
   "layer": "B",
   "version": "0.1.0",
-  "generated_at": "2026-09-21T05:00:07Z",
+  "generated_at": "2026-09-21T05:17:15Z",
   "visibility": "private",
-  "wip": [
-    "ha-blackhat"
-  ],
+  "wip": [],
   "skills": [
     "ha-aml",
     "ha-aml-tick",
@@ -52,7 +50,6 @@
     "ha-payments-tick",
     "ha-pivot",
     "ha-pp-consensus",
-    "ha-pp-consensus-tick",
     "ha-ppdev",
     "ha-ppdev-tick",
     "ha-pragmatic",

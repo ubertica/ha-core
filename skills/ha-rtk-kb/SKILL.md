@@ -37,7 +37,17 @@ Alias: `~/.grok/hard-allow/kb/rtk` → `~/.grok/ha-rtk-kb`.
 
 No JWT/CBU/loot bodies in the shared store. Blackhat loot stays in engagement OUT. Civil pack never reads loot files — only the index.
 
-## Nodes
+## Nodes (Drive SoT)
 
-Hydrate: `nodes_search` q=TARGET + `ha-rtk-kb`.  
-Commit: `nodes_commit_turn` source=grok tags=`[ha-rtk-kb, ha-redteam|ha-blackhat]`.
+Bodies live on **Google Drive `walterg2924@gmail.com`**:
+`Mi unidad/ha-context-nodes/tenants/<admin|root>/`
+
+Mac holds **INDEX placeholders only** (`~/.grok/context-nodes/INDEX.jsonl`). Expand on demand:
+
+```bash
+python3 ~/.grok/context-nodes/bin/nodes-drive.py search --q "dedibox"
+python3 ~/.grok/context-nodes/bin/nodes-drive.py get --id knowledge.infra.scaleway-dedibox-connect
+python3 ~/.grok/skills/ha-rtk-kb/scripts/nodes-bridge.py status
+```
+
+Do not copy `state.json` / `ledger.jsonl` back onto the Mac. Cache of expanded nodes: `~/.grok/context-nodes/cache/expanded/`.

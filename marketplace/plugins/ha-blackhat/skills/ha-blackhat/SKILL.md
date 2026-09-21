@@ -23,9 +23,9 @@ Party: this TUI. **No 4 TUIs.** Nested `grok -p` banned.
 | g3 | probe, exploit, loot, intel |
 | g4 | chain, docs, OBJECTIVE_POLL |
 
-Layers (shared scripts via KB): jump · pivot · radio · intel · memory · spawn · learn.
+Layers (shared scripts via KB): jump · pivot · radio · intel · memory · spawn · learn · ingest.
 
-Not ha-dani. Accidental run on Daniel cwd → NACK, route to ha-redteam. Loot never into product repos. HARDALLOW radio, not Puma Jira default.
+Not ha-dani. Accidental run on Daniel cwd → NACK, route to ha-redteam. Loot never into product repos. HARDALLOW radio, not Puma Jira default (`HA_BLACKHAT_JIRA=1` to push).
 
 ```bash
 bash ~/.grok/skills/ha-blackhat/scripts/ctl.sh auto --target "$TARGET" --out "$HA_BLACKHAT_OUT"
